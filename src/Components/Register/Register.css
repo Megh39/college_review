@@ -1,0 +1,75 @@
+.registerScreen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 80vh;
+  width: 100%;
+}
+.registerScreen h1 {
+  padding: 30px 0;
+  color: #8a2be2;
+}
+.registerForm {
+  background-color: white;
+  color: black;
+  /* border: 5px solid cyan; */
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+  padding: 50px 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.registerForm h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+  width: 95%;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.formGroup input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.registerButton {
+  width: 100%;
+  padding: 10px;
+  background-color: cyan;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.registerButton:hover {
+  background-color: #8a2be2;
+}
+
+p {
+  text-align: center;
+  margin-top: 15px;
+}
+
+a {
+  color: blueviolet;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

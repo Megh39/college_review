@@ -1,0 +1,20 @@
+.navigationBar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.navLinks {
+  display: flex;
+  justify-content: space-between;
+}
+.navLinks a {
+  padding: 30px;
+  font-size: 20px;
+  color: white;
+  transition: 0.5s;
+}
+.navLinks a:hover {
+  color: cyan;
+  text-decoration: underline;
+  transition: 0.5s;
+}
