@@ -1,0 +1,74 @@
+{
+    "https://www.nirfindia.org/Ranki": [
+        {
+            "college_id": "IR-I-U-0306",
+            "college_name": "Indian Institute of Technology Bombay",
+            "odd href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Innovation/IR-I-U-0306.pdf",
+            "college_city": "Maharashtra",
+            "sorting_1": "1"
+        },
+        {
+            "sorting_1": "2",
+            "college_id": "IR-I-U-0456",
+            "college_name": "Indian Institute of Technology Madras",
+            "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Innovation/IR-I-U-0456.pdf",
+            "college_city": "Tamil Nadu"
+        },
+        {
+            "college_id": "IR-I-U-0013",
+            "college_name": "Indian Institute of Technology Hyderabad",
+            "odd href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Innovation/IR-I-U-0013.pdf",
+            "college_city": "Telangana",
+            "sorting_1": "3"
+        },
+        {
+            "sorting_1": "4",
+            "college_id": "IR-I-U-0220",
+            "college_name": "Indian Institute of Science, Bengaluru",
+            "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Innovation/IR-I-U-0220.pdf",
+            "college_city": "Karnataka"
+        },
+        {
+            "college_id": "IR-I-I-1075",
+            "college_name": "Indian Institute of Technology Kanpur",
+            "odd href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Innovation/IR-I-I-1075.pdf",
+            "college_city": "Uttar Pradesh",
+            "sorting_1": "5"
+        },
+        {
+            "sorting_1": "6",
+            "college_id": "IR-I-U-0560",
+            "college_name": "Indian Institute of Technology Roorkee",
+            "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Innovation/IR-I-U-0560.pdf",
+            "college_city": "Uttarakhand"
+        },
+        {
+            "college_id": "IR-I-I-1074",
+            "college_name": "Indian Institute of Technology Delhi",
+            "odd href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Innovation/IR-I-I-1074.pdf",
+            "college_city": "Delhi",
+            "sorting_1": "7"
+        },
+        {
+            "sorting_1": "8",
+            "college_id": "IR-I-U-0184",
+            "college_name": "Indian Institute of Technology Mandi",
+            "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Innovation/IR-I-U-0184.pdf",
+            "college_city": "Himachal Pradesh"
+        },
+        {
+            "college_id": "IR-I-U-0573",
+            "college_name": "Indian Institute of Technology Kharagpur",
+            "odd href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Innovation/IR-I-U-0573.pdf",
+            "college_city": "West Bengal",
+            "sorting_1": "9"
+        },
+        {
+            "sorting_1": "10",
+            "college_id": "IR-I-U-0439",
+            "college_name": "Anna University",
+            "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Innovation/IR-I-U-0439.pdf",
+            "college_city": "Tamil Nadu"
+        }
+    ]
+}

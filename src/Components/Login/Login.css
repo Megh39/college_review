@@ -1,0 +1,23 @@
+.loginScreen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 80vh;
+}
+.loginForm {
+  width: 500px;
+  padding: 40px 30px;
+  border-radius: 10px;
+  background-color: white;
+}
+.loginForm h2 {
+  text-align: center;
+  color: black;
+  margin-bottom: 20px;
+}
+.formGroup label {
+  font-weight: bold;
+  color: black;
+  margin-bottom: 10px;
+}

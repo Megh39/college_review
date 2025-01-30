@@ -13,11 +13,10 @@
 .registerForm {
   background-color: white;
   color: black;
-  /* border: 5px solid cyan; */
   border-radius: 10px;
   width: 100%;
   max-width: 500px;
-  padding: 50px 30px;
+  padding: 40px 30px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -54,10 +53,12 @@
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .registerButton:hover {
   background-color: #8a2be2;
+  transition: 0.3s;
 }
 
 p {
