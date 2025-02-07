@@ -19,7 +19,7 @@ const Register = () => {
             return;
         }
         try {
-            const response = await axios.post("http://localhost:5000/api/auth/register", {
+            const response = await axios.post("https://college-review-backend.vercel.app/api/auth/register", {
                 username, email, age, password
             });
             alert("Registration successful");
