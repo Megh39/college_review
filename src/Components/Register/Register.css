@@ -29,7 +29,21 @@
   margin-bottom: 15px;
   width: 95%;
 }
+.formGroup1 {
+  margin-bottom: 15px;
+  width: 95%;
+}
 
+.formGroup1 input {
+  padding: 10px 0;
+  font-size: 16px;
+  margin: 5px 10px;
+}
+.formGroup1 label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
 .formGroup label {
   display: block;
   margin-bottom: 5px;

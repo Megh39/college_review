@@ -1,0 +1,7 @@
+.dashboardPage{
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
