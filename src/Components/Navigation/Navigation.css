@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  border-bottom: 1px solid white;
 }
 .navLinks {
   display: flex;
@@ -11,10 +12,10 @@
   padding: 30px;
   font-size: 20px;
   color: white;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 .navLinks a:hover {
-  color: cyan;
+  color: blueviolet;
   text-decoration: underline;
-  transition: 0.5s;
+  transition: 0.3s;
 }

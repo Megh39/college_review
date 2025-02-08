@@ -10,26 +10,25 @@ const Login = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-    
+
         try {
             const isEmail = usernameOrEmail.includes("@"); // Check if input is email
             const requestData = isEmail
                 ? { email: usernameOrEmail, password }
                 : { username: usernameOrEmail, password };
-    
+
             const response = await axios.post("https://college-review-backend.vercel.app/api/auth/login", requestData);
-    
+
             const user = response.data.user; // Extract user object
-            console.log("User object:", user); // Debugging - Check if role exists
-    
+
             if (!user || !user.role) {
                 alert("Invalid credentials");
                 return;
             }
-    
+
             alert("Login successful!");
             localStorage.setItem("user", JSON.stringify(user));
-    
+
             // ✅ Redirect based on role
             if (user.role === "admin") {
                 navigate("/adminDashboard");
@@ -40,7 +39,7 @@ const Login = () => {
             alert(`Error: ${error.response?.data?.message || "Server error"}`);
         }
     };
-    
+
     return (
         <div className="loginScreen">
             <div className="loginForm">
