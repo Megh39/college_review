@@ -19,3 +19,9 @@
   text-decoration: underline;
   transition: 0.3s;
 }
+@media (max-width:576px){
+  .navLinks a{
+    padding:  20px;
+    font-size: 18px;
+  }
+}

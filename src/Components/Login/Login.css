@@ -39,3 +39,9 @@
   color: black;
   margin-bottom: 10px;
 }
+@media (max-width:576px){
+  .loginForm{
+    width: 300px;
+    padding: 30px;
+  }
+}
