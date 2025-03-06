@@ -1,5 +1,5 @@
 {
-    "https://www.nirfindia.org/Ranki": [
+    "Law_Ranking": [
         {
             "college_id": "IR-L-U-0238",
             "college_name": "National Law School of India University",
@@ -12,7 +12,7 @@
             "PERCEPTION (100)": "100.00",
             "college_city": "Bengaluru",
             "college_state": "Karnataka",
-            "sorting_1": "83.83",
+            "ranking_score": "83.83",
             "college_rank": "1"
         },
         {
@@ -21,14 +21,14 @@
             "GO (100)": "82.44",
             "OI (100)": "71.29",
             "PERCEPTION (100)": "93.20",
-            "sorting_1": "77.48",
+            "ranking_score": "77.48",
             "college_id": "IR-L-U-0111",
-            "college_name_1": "National Law University",
+            "college_name": "National Law University",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Law/IR-L-U-0111.pdf",
             "even href 2": "https://www.nirfindia.org/nirfpdfcdn/2024/graph/Law/IR-L-U-0111.jpg",
             "college_city": "New Delhi",
             "college_state": "Delhi",
-            "college_rank_1": "2"
+            "college_rank": "2"
         },
         {
             "college_id": "IR-L-N-18",
@@ -42,7 +42,7 @@
             "PERCEPTION (100)": "73.40",
             "college_city": "Hyderabad",
             "college_state": "Telangana",
-            "sorting_1": "77.05",
+            "ranking_score": "77.05",
             "college_rank": "3"
         },
         {
@@ -51,14 +51,14 @@
             "GO (100)": "83.24",
             "OI (100)": "69.23",
             "PERCEPTION (100)": "66.99",
-            "sorting_1": "76.39",
+            "ranking_score": "76.39",
             "college_id": "IR-L-U-0585",
-            "college_name_1": "The West Bengal National University of Juridical Sciences",
+            "college_name": "The West Bengal National University of Juridical Sciences",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Law/IR-L-U-0585.pdf",
             "even href 2": "https://www.nirfindia.org/nirfpdfcdn/2024/graph/Law/IR-L-U-0585.jpg",
             "college_city": "Kolkata",
             "college_state": "West Bengal",
-            "college_rank_1": "4"
+            "college_rank": "4"
         },
         {
             "college_id": "IR-L-C-19328",
@@ -72,7 +72,7 @@
             "PERCEPTION (100)": "66.36",
             "college_city": "Pune",
             "college_state": "Maharashtra",
-            "sorting_1": "74.62",
+            "ranking_score": "74.62",
             "college_rank": "5"
         },
         {
@@ -81,14 +81,14 @@
             "GO (100)": "91.02",
             "OI (100)": "85.71",
             "PERCEPTION (100)": "51.11",
-            "sorting_1": "73.12",
+            "ranking_score": "73.12",
             "college_id": "IR-L-U-0108",
-            "college_name_1": "Jamia Millia Islamia",
+            "college_name": "Jamia Millia Islamia",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Law/IR-L-U-0108.pdf",
             "even href 2": "https://www.nirfindia.org/nirfpdfcdn/2024/graph/Law/IR-L-U-0108.jpg",
             "college_city": "New Delhi",
             "college_state": "Delhi",
-            "college_rank_1": "6"
+            "college_rank": "6"
         },
         {
             "college_id": "IR-L-U-0573",
@@ -102,7 +102,7 @@
             "PERCEPTION (100)": "40.71",
             "college_city": "Kharagpur",
             "college_state": "West Bengal",
-            "sorting_1": "71.47",
+            "ranking_score": "71.47",
             "college_rank": "7"
         },
         {
@@ -111,14 +111,14 @@
             "GO (100)": "75.13",
             "OI (100)": "71.80",
             "PERCEPTION (100)": "47.25",
-            "sorting_1": "69.56",
+            "ranking_score": "69.56",
             "college_id": "IR-L-U-0134",
-            "college_name_1": "Gujarat National Law University",
+            "college_name": "Gujarat National Law University",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Law/IR-L-U-0134.pdf",
             "even href 2": "https://www.nirfindia.org/nirfpdfcdn/2024/graph/Law/IR-L-U-0134.jpg",
             "college_city": "Gandhinagar",
             "college_state": "Gujarat",
-            "college_rank_1": "8"
+            "college_rank": "8"
         },
         {
             "college_id": "IR-L-U-0363",
@@ -132,7 +132,7 @@
             "PERCEPTION (100)": "46.23",
             "college_city": "Bhubaneswar",
             "college_state": "Odisha",
-            "sorting_1": "65.40",
+            "ranking_score": "65.40",
             "college_rank": "9"
         },
         {
@@ -141,14 +141,14 @@
             "GO (100)": "85.42",
             "OI (100)": "67.68",
             "PERCEPTION (100)": "26.82",
-            "sorting_1": "64.96",
+            "ranking_score": "64.96",
             "college_id": "IR-L-U-0498",
-            "college_name_1": "Babasaheb Bhimrao Ambedkar University",
+            "college_name": "Babasaheb Bhimrao Ambedkar University",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Law/IR-L-U-0498.pdf",
             "even href 2": "https://www.nirfindia.org/nirfpdfcdn/2024/graph/Law/IR-L-U-0498.jpg",
             "college_city": "Lucknow",
             "college_state": "Uttar Pradesh",
-            "college_rank_1": "10"
+            "college_rank": "10"
         },
         {
             "college_id": "IR-L-U-0356",
@@ -162,7 +162,7 @@
             "PERCEPTION (100)": "8.48",
             "college_city": "Bhubaneswar",
             "college_state": "Odisha",
-            "sorting_1": "63.60",
+            "ranking_score": "63.60",
             "college_rank": "11"
         },
         {
@@ -171,14 +171,14 @@
             "GO (100)": "93.85",
             "OI (100)": "58.47",
             "PERCEPTION (100)": "48.25",
-            "sorting_1": "63.54",
+            "ranking_score": "63.54",
             "college_id": "IR-L-U-0496",
-            "college_name_1": "Aligarh Muslim University",
+            "college_name": "Aligarh Muslim University",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Law/IR-L-U-0496.pdf",
             "even href 2": "https://www.nirfindia.org/nirfpdfcdn/2024/graph/Law/IR-L-U-0496.jpg",
             "college_city": "Aligarh",
             "college_state": "Uttar Pradesh",
-            "college_rank_1": "12"
+            "college_rank": "12"
         },
         {
             "college_id": "IR-L-I-1441",
@@ -192,7 +192,7 @@
             "PERCEPTION (100)": "17.63",
             "college_city": "Chennai",
             "college_state": "Tamil Nadu",
-            "sorting_1": "61.58",
+            "ranking_score": "61.58",
             "college_rank": "13"
         },
         {
@@ -201,14 +201,14 @@
             "GO (100)": "69.74",
             "OI (100)": "57.33",
             "PERCEPTION (100)": "28.43",
-            "sorting_1": "60.65",
+            "ranking_score": "60.65",
             "college_id": "IR-L-U-0476",
-            "college_name_1": "Shanmugha Arts Science Technology and Research Academy",
+            "college_name": "Shanmugha Arts Science Technology and Research Academy",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Law/IR-L-U-0476.pdf",
             "even href 2": "https://www.nirfindia.org/nirfpdfcdn/2024/graph/Law/IR-L-U-0476.jpg",
             "college_city": "Thanjavur",
             "college_state": "Tamil Nadu",
-            "college_rank_1": "14"
+            "college_rank": "14"
         },
         {
             "college_id": "IR-L-U-0217",
@@ -222,7 +222,7 @@
             "PERCEPTION (100)": "48.25",
             "college_city": "Bengaluru",
             "college_state": "Karnataka",
-            "sorting_1": "59.39",
+            "ranking_score": "59.39",
             "college_rank": "15"
         },
         {
@@ -231,14 +231,14 @@
             "GO (100)": "72.84",
             "OI (100)": "58.90",
             "PERCEPTION (100)": "19.64",
-            "sorting_1": "58.75",
+            "ranking_score": "58.75",
             "college_id": "IR-L-C-23907",
-            "college_name_1": "Dr. B. R. Ambedkar College of Law",
+            "college_name": "Dr. B. R. Ambedkar College of Law",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Law/IR-L-C-23907.pdf",
             "even href 2": "https://www.nirfindia.org/nirfpdfcdn/2024/graph/Law/IR-L-C-23907.jpg",
             "college_city": "Visakhapatnam",
             "college_state": "Andhra Pradesh",
-            "college_rank_1": "16"
+            "college_rank": "16"
         },
         {
             "college_id": "IR-L-U-0099",
@@ -252,7 +252,7 @@
             "PERCEPTION (100)": "38.28",
             "college_city": "New Delhi",
             "college_state": "Delhi",
-            "sorting_1": "58.68",
+            "ranking_score": "58.68",
             "college_rank": "17"
         },
         {
@@ -261,14 +261,14 @@
             "GO (100)": "48.40",
             "OI (100)": "72.54",
             "PERCEPTION (100)": "19.64",
-            "sorting_1": "56.72",
+            "ranking_score": "56.72",
             "college_id": "IR-L-U-0213",
-            "college_name_1": "Alliance University",
+            "college_name": "Alliance University",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Law/IR-L-U-0213.pdf",
             "even href 2": "https://www.nirfindia.org/nirfpdfcdn/2024/graph/Law/IR-L-U-0213.jpg",
             "college_city": "Bengaluru",
             "college_state": "Karnataka",
-            "college_rank_1": "18"
+            "college_rank": "18"
         },
         {
             "college_id": "IR-L-U-0379",
@@ -282,7 +282,7 @@
             "PERCEPTION (100)": "8.48",
             "college_city": "Phagwara",
             "college_state": "Punjab",
-            "sorting_1": "56.71",
+            "ranking_score": "56.71",
             "college_rank": "19"
         },
         {
@@ -291,14 +291,14 @@
             "GO (100)": "82.20",
             "OI (100)": "50.31",
             "PERCEPTION (100)": "45.18",
-            "sorting_1": "55.92",
+            "ranking_score": "55.92",
             "college_id": "IR-L-U-0511",
-            "college_name_1": "Dr. Ram Manohar Lohiya National Law University",
+            "college_name": "Dr. Ram Manohar Lohiya National Law University",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Law/IR-L-U-0511.pdf",
             "even href 2": "https://www.nirfindia.org/nirfpdfcdn/2024/graph/Law/IR-L-U-0511.jpg",
             "college_city": "Lucknow",
             "college_state": "Uttar Pradesh",
-            "college_rank_1": "20"
+            "college_rank": "20"
         },
         {
             "college_id": "IR-L-U-0285",
@@ -312,7 +312,7 @@
             "PERCEPTION (100)": "29.99",
             "college_city": "Bhopal",
             "college_state": "Madhya Pradesh",
-            "sorting_1": "55.64",
+            "ranking_score": "55.64",
             "college_rank": "21"
         },
         {
@@ -321,14 +321,14 @@
             "GO (100)": "60.06",
             "OI (100)": "61.36",
             "PERCEPTION (100)": "35.69",
-            "sorting_1": "55.52",
+            "ranking_score": "55.52",
             "college_id": "IR-L-U-0600",
-            "college_name_1": "National University of Study and Research in Law",
+            "college_name": "National University of Study and Research in Law",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Law/IR-L-U-0600.pdf",
             "even href 2": "https://www.nirfindia.org/nirfpdfcdn/2024/graph/Law/IR-L-U-0600.jpg",
             "college_city": "Ranchi",
             "college_state": "Jharkhand",
-            "college_rank_1": "22"
+            "college_rank": "22"
         },
         {
             "college_id": "IR-L-U-0524",
@@ -342,7 +342,7 @@
             "PERCEPTION (100)": "37.00",
             "college_city": "Lucknow",
             "college_state": "Uttar Pradesh",
-            "sorting_1": "55.05",
+            "ranking_score": "55.05",
             "college_rank": "23"
         },
         {
@@ -351,14 +351,14 @@
             "GO (100)": "56.44",
             "OI (100)": "73.24",
             "PERCEPTION (100)": "34.34",
-            "sorting_1": "54.70",
+            "ranking_score": "54.70",
             "college_id": "IR-L-U-0386",
-            "college_name_1": "The Rajiv Gandhi National University of Law",
+            "college_name": "The Rajiv Gandhi National University of Law",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Law/IR-L-U-0386.pdf",
             "even href 2": "https://www.nirfindia.org/nirfpdfcdn/2024/graph/Law/IR-L-U-0386.jpg",
             "college_city": "Patiala",
             "college_state": "Punjab",
-            "college_rank_1": "24"
+            "college_rank": "24"
         },
         {
             "college_id": "IR-L-U-0500",
@@ -372,7 +372,7 @@
             "PERCEPTION (100)": "65.72",
             "college_city": "Varanasi",
             "college_state": "Uttar Pradesh",
-            "sorting_1": "54.54",
+            "ranking_score": "54.54",
             "college_rank": "25"
         },
         {
@@ -381,14 +381,14 @@
             "GO (100)": "53.70",
             "OI (100)": "69.39",
             "PERCEPTION (100)": "48.25",
-            "sorting_1": "54.49",
+            "ranking_score": "54.49",
             "college_id": "IR-L-U-0358",
-            "college_name_1": "National Law University, Cuttack",
+            "college_name": "National Law University, Cuttack",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Law/IR-L-U-0358.pdf",
             "even href 2": "https://www.nirfindia.org/nirfpdfcdn/2024/graph/Law/IR-L-U-0358.jpg",
             "college_city": "Cuttack",
             "college_state": "Odisha",
-            "college_rank_1": "26"
+            "college_rank": "26"
         },
         {
             "college_id": "IR-L-U-0677",
@@ -402,7 +402,7 @@
             "PERCEPTION (100)": "32.94",
             "college_city": "Kamrup",
             "college_state": "Assam",
-            "sorting_1": "53.39",
+            "ranking_score": "53.39",
             "college_rank": "27"
         },
         {
@@ -411,14 +411,14 @@
             "GO (100)": "40.56",
             "OI (100)": "71.33",
             "PERCEPTION (100)": "76.51",
-            "sorting_1": "52.92",
+            "ranking_score": "52.92",
             "college_id": "IR-L-U-0564",
-            "college_name_1": "UPES",
+            "college_name": "UPES",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Law/IR-L-U-0564.pdf",
             "even href 2": "https://www.nirfindia.org/nirfpdfcdn/2024/graph/Law/IR-L-U-0564.jpg",
             "college_city": "Dehradun",
             "college_state": "Uttarakhand",
-            "college_rank_1": "28"
+            "college_rank": "28"
         },
         {
             "college_id": "IR-L-U-0749",
@@ -432,7 +432,7 @@
             "PERCEPTION (100)": "8.48",
             "college_city": "Jaipur",
             "college_state": "Rajasthan",
-            "sorting_1": "52.23",
+            "ranking_score": "52.23",
             "college_rank": "29"
         },
         {
@@ -441,14 +441,14 @@
             "GO (100)": "63.34",
             "OI (100)": "71.41",
             "PERCEPTION (100)": "40.71",
-            "sorting_1": "52.11",
+            "ranking_score": "52.11",
             "college_id": "IR-L-C-22215",
-            "college_name_1": "Army Institute of Law",
+            "college_name": "Army Institute of Law",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Law/IR-L-C-22215.pdf",
             "even href 2": "https://www.nirfindia.org/nirfpdfcdn/2024/graph/Law/IR-L-C-22215.jpg",
             "college_city": "Mohali",
             "college_state": "Punjab",
-            "college_rank_1": "30"
+            "college_rank": "30"
         },
         {
             "college_id": "IR-L-U-0886",
@@ -462,7 +462,7 @@
             "PERCEPTION (100)": "37.00",
             "college_city": "Mumbai",
             "college_state": "Maharashtra",
-            "sorting_1": "51.70",
+            "ranking_score": "51.70",
             "college_rank": "31"
         },
         {
@@ -471,14 +471,14 @@
             "GO (100)": "58.72",
             "OI (100)": "56.53",
             "PERCEPTION (100)": "17.63",
-            "sorting_1": "51.70",
+            "ranking_score": "51.70",
             "college_id": "IR-L-U-0063",
-            "college_name_1": "Chanakya National Law University",
+            "college_name": "Chanakya National Law University",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Law/IR-L-U-0063.pdf",
             "even href 2": "https://www.nirfindia.org/nirfpdfcdn/2024/graph/Law/IR-L-U-0063.jpg",
             "college_city": "Patna",
             "college_state": "Bihar",
-            "college_rank_1": "31"
+            "college_rank": "31"
         },
         {
             "college_id": "IR-L-U-0155",
@@ -492,7 +492,7 @@
             "PERCEPTION (100)": "23.38",
             "college_city": "Gurugram, Haryana",
             "college_state": "Haryana",
-            "sorting_1": "51.68",
+            "ranking_score": "51.68",
             "college_rank": "33"
         },
         {
@@ -501,14 +501,14 @@
             "GO (100)": "48.44",
             "OI (100)": "64.95",
             "PERCEPTION (100)": "19.64",
-            "sorting_1": "51.43",
+            "ranking_score": "51.43",
             "college_id": "IR-L-U-0880",
-            "college_name_1": "Maharashtra National Law University, Nagpur",
+            "college_name": "Maharashtra National Law University, Nagpur",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Law/IR-L-U-0880.pdf",
             "even href 2": "https://www.nirfindia.org/nirfpdfcdn/2024/graph/Law/IR-L-U-0880.jpg",
             "college_city": "Nagpur",
             "college_state": "Maharashtra",
-            "college_rank_1": "34"
+            "college_rank": "34"
         },
         {
             "college_id": "IR-L-U-0103",
@@ -522,7 +522,7 @@
             "PERCEPTION (100)": "66.36",
             "college_city": "New Delhi",
             "college_state": "Delhi",
-            "sorting_1": "50.25",
+            "ranking_score": "50.25",
             "college_rank": "35"
         },
         {
@@ -531,14 +531,14 @@
             "GO (100)": "42.82",
             "OI (100)": "60.34",
             "PERCEPTION (100)": "10.97",
-            "sorting_1": "49.87",
+            "ranking_score": "49.87",
             "college_id": "IR-L-U-0012",
-            "college_name_1": "ICFAI Foundation for Higher Education, Hyderabad",
+            "college_name": "ICFAI Foundation for Higher Education, Hyderabad",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Law/IR-L-U-0012.pdf",
             "even href 2": "https://www.nirfindia.org/nirfpdfcdn/2024/graph/Law/IR-L-U-0012.jpg",
             "college_city": "Hyderabad",
             "college_state": "Telangana",
-            "college_rank_1": "36"
+            "college_rank": "36"
         },
         {
             "college_id": "IR-L-U-0011",
@@ -552,7 +552,7 @@
             "PERCEPTION (100)": "10.97",
             "college_city": "Visakhapatnam",
             "college_state": "Andhra Pradesh",
-            "sorting_1": "48.49",
+            "ranking_score": "48.49",
             "college_rank": "37"
         },
         {
@@ -561,14 +561,14 @@
             "GO (100)": "66.40",
             "OI (100)": "54.67",
             "PERCEPTION (100)": "35.69",
-            "sorting_1": "47.96",
+            "ranking_score": "47.96",
             "college_id": "IR-L-U-0264",
-            "college_name_1": "National University of Advanced Legal Studies (NUALS)",
+            "college_name": "National University of Advanced Legal Studies (NUALS)",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Law/IR-L-U-0264.pdf",
             "even href 2": "https://www.nirfindia.org/nirfpdfcdn/2024/graph/Law/IR-L-U-0264.jpg",
             "college_city": "Kochi",
             "college_state": "Kerala",
-            "college_rank_1": "38"
+            "college_rank": "38"
         },
         {
             "college_id": "IR-L-I-1291",
@@ -582,7 +582,7 @@
             "PERCEPTION (100)": "23.38",
             "college_city": "Visakhapatnam",
             "college_state": "Andhra Pradesh",
-            "sorting_1": "47.94",
+            "ranking_score": "47.94",
             "college_rank": "39"
         },
         {
@@ -591,14 +591,14 @@
             "GO (100)": "45.55",
             "OI (100)": "62.72",
             "PERCEPTION (100)": "5.84",
-            "sorting_1": "47.94",
+            "ranking_score": "47.94",
             "college_id": "IR-L-U-0779",
-            "college_name_1": "Amity University",
+            "college_name": "Amity University",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Law/IR-L-U-0779.pdf",
             "even href 2": "https://www.nirfindia.org/nirfpdfcdn/2024/graph/Law/IR-L-U-0779.jpg",
             "college_city": "North Twenty Four Parganas",
             "college_state": "West Bengal",
-            "college_rank_1": "39"
+            "college_rank": "39"
         }
     ]
 }

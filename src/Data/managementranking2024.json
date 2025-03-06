@@ -1,5 +1,5 @@
 {
-  "https://www.nirfindia.org/Ranki": [
+  "Management_Ranking": [
     {
       "college_id": "IR-M-S-8890",
       "college_name": "Indian Institute of Management Ahmedabad",
@@ -12,7 +12,7 @@
       "PERCEPTION (100)": "96.81",
       "college_city": "Ahmedabad",
       "college_state": "Gujarat",
-      "sorting_1": "83.32",
+      "ranking_score": "83.32",
       "college_rank": "1"
     },
     {
@@ -21,7 +21,7 @@
       "GO (100)": "98.41",
       "OI (100)": "74.54",
       "PERCEPTION (100)": "100.00",
-      "sorting_1": "81.16",
+      "ranking_score": "81.16",
       "college_id": "IR-M-S-8903",
       "college_name": "Indian Institute of Management Bangalore",
       "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Management/IR-M-S-8903.pdf",
@@ -42,7 +42,7 @@
       "PERCEPTION (100)": "75.30",
       "college_city": "Kozhikode",
       "college_state": "Kerala",
-      "sorting_1": "77.90",
+      "ranking_score": "77.90",
       "college_rank": "3"
     },
     {
@@ -51,7 +51,7 @@
       "GO (100)": "89.51",
       "OI (100)": "67.37",
       "PERCEPTION (100)": "64.25",
-      "sorting_1": "76.25",
+      "ranking_score": "76.25",
       "college_id": "IR-M-I-1074",
       "college_name": "Indian Institute of Technology Delhi",
       "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Management/IR-M-I-1074.pdf",
@@ -72,7 +72,7 @@
       "PERCEPTION (100)": "85.29",
       "college_city": "Kolkata",
       "college_state": "West Bengal",
-      "sorting_1": "75.07",
+      "ranking_score": "75.07",
       "college_rank": "5"
     },
     {
@@ -81,7 +81,7 @@
       "GO (100)": "99.41",
       "OI (100)": "75.86",
       "PERCEPTION (100)": "52.82",
-      "sorting_1": "74.73",
+      "ranking_score": "74.73",
       "college_id": "IR-M-S-8931",
       "college_name": "Indian Institute of Management Mumbai",
       "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Management/IR-M-S-8931.pdf",
@@ -102,7 +102,7 @@
       "PERCEPTION (100)": "79.81",
       "college_city": "Lucknow",
       "college_state": "Uttar Pradesh",
-      "sorting_1": "74.43",
+      "ranking_score": "74.43",
       "college_rank": "7"
     },
     {
@@ -111,7 +111,7 @@
       "GO (100)": "93.49",
       "OI (100)": "72.38",
       "PERCEPTION (100)": "57.93",
-      "sorting_1": "73.53",
+      "ranking_score": "73.53",
       "college_id": "IR-M-S-8918",
       "college_name": "Indian Institute of Management Indore",
       "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Management/IR-M-S-8918.pdf",
@@ -132,7 +132,7 @@
       "PERCEPTION (100)": "45.02",
       "college_city": "Jamshedpur",
       "college_state": "Jharkhand",
-      "sorting_1": "68.13",
+      "ranking_score": "68.13",
       "college_rank": "9"
     },
     {
@@ -141,7 +141,7 @@
       "GO (100)": "79.25",
       "OI (100)": "58.83",
       "PERCEPTION (100)": "34.50",
-      "sorting_1": "67.16",
+      "ranking_score": "67.16",
       "college_id": "IR-M-U-0306",
       "college_name": "Indian Institute of Technology Bombay",
       "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Management/IR-M-U-0306.pdf",
@@ -162,7 +162,7 @@
       "PERCEPTION (100)": "27.07",
       "college_city": "Gurugram",
       "college_state": "Haryana",
-      "sorting_1": "66.85",
+      "ranking_score": "66.85",
       "college_rank": "11"
     },
     {
@@ -171,7 +171,7 @@
       "GO (100)": "88.90",
       "OI (100)": "75.98",
       "PERCEPTION (100)": "37.00",
-      "sorting_1": "66.49",
+      "ranking_score": "66.49",
       "college_id": "IR-M-S-8895",
       "college_name": "Indian Institute of Management Rohtak",
       "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Management/IR-M-S-8895.pdf",
@@ -192,7 +192,7 @@
       "PERCEPTION (100)": "41.21",
       "college_city": "Pune",
       "college_state": "Maharashtra",
-      "sorting_1": "65.13",
+      "ranking_score": "65.13",
       "college_rank": "13"
     },
     {
@@ -201,7 +201,7 @@
       "GO (100)": "90.68",
       "OI (100)": "80.55",
       "PERCEPTION (100)": "23.25",
-      "sorting_1": "64.40",
+      "ranking_score": "64.40",
       "college_id": "IR-M-S-8868",
       "college_name": "Indian Institute of Management Raipur",
       "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Management/IR-M-S-8868.pdf",
@@ -222,7 +222,7 @@
       "PERCEPTION (100)": "42.58",
       "college_city": "New Delhi",
       "college_state": "Delhi",
-      "sorting_1": "62.36",
+      "ranking_score": "62.36",
       "college_rank": "15"
     },
     {
@@ -231,7 +231,7 @@
       "GO (100)": "75.10",
       "OI (100)": "60.43",
       "PERCEPTION (100)": "51.74",
-      "sorting_1": "61.73",
+      "ranking_score": "61.73",
       "college_id": "IR-M-U-0456",
       "college_name": "Indian Institute of Technology Madras",
       "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Management/IR-M-U-0456.pdf",
@@ -252,7 +252,7 @@
       "PERCEPTION (100)": "30.82",
       "college_city": "Ranchi",
       "college_state": "Jharkhand",
-      "sorting_1": "61.27",
+      "ranking_score": "61.27",
       "college_rank": "17"
     },
     {
@@ -261,7 +261,7 @@
       "GO (100)": "71.09",
       "OI (100)": "62.16",
       "PERCEPTION (100)": "26.50",
-      "sorting_1": "61.21",
+      "ranking_score": "61.21",
       "college_id": "IR-M-U-0560",
       "college_name": "Indian Institute of Technology Roorkee",
       "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Management/IR-M-U-0560.pdf",
@@ -282,7 +282,7 @@
       "PERCEPTION (100)": "37.88",
       "college_city": "Kharagpur",
       "college_state": "West Bengal",
-      "sorting_1": "61.03",
+      "ranking_score": "61.03",
       "college_rank": "19"
     },
     {
@@ -291,7 +291,7 @@
       "GO (100)": "98.65",
       "OI (100)": "68.90",
       "PERCEPTION (100)": "27.07",
-      "sorting_1": "60.97",
+      "ranking_score": "60.97",
       "college_id": "IR-M-I-1044",
       "college_name": "S. P. Jain Institute of Management and Research",
       "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Management/IR-M-I-1044.pdf",
@@ -312,7 +312,7 @@
       "PERCEPTION (100)": "22.95",
       "college_city": "Mumbai",
       "college_state": "Maharashtra",
-      "sorting_1": "60.96",
+      "ranking_score": "60.96",
       "college_rank": "21"
     },
     {
@@ -321,7 +321,7 @@
       "GO (100)": "88.69",
       "OI (100)": "72.05",
       "PERCEPTION (100)": "20.39",
-      "sorting_1": "60.93",
+      "ranking_score": "60.93",
       "college_id": "IR-M-S-8942",
       "college_name": "Indian Institute of Management Udaipur",
       "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Management/IR-M-S-8942.pdf",
@@ -342,7 +342,7 @@
       "PERCEPTION (100)": "30.56",
       "college_city": "Kashipur",
       "college_state": "Uttarakhand",
-      "sorting_1": "60.82",
+      "ranking_score": "60.82",
       "college_rank": "23"
     },
     {
@@ -351,7 +351,7 @@
       "GO (100)": "94.96",
       "OI (100)": "74.09",
       "PERCEPTION (100)": "31.83",
-      "sorting_1": "60.49",
+      "ranking_score": "60.49",
       "college_id": "IR-M-S-8937",
       "college_name": "Indian Institute of Management Shillong",
       "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Management/IR-M-S-8937.pdf",
@@ -372,7 +372,7 @@
       "PERCEPTION (100)": "15.14",
       "college_city": "New Delhi",
       "college_state": "Delhi",
-      "sorting_1": "60.32",
+      "ranking_score": "60.32",
       "college_rank": "25"
     },
     {
@@ -381,7 +381,7 @@
       "GO (100)": "86.10",
       "OI (100)": "70.53",
       "PERCEPTION (100)": "39.37",
-      "sorting_1": "59.20",
+      "ranking_score": "59.20",
       "college_id": "IR-M-U-1007",
       "college_name": "Indian Institute of Management Visakhapatnam",
       "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Management/IR-M-U-1007.pdf",
@@ -402,7 +402,7 @@
       "PERCEPTION (100)": "61.89",
       "college_city": "Tiruchirappalli",
       "college_state": "Tamil Nadu",
-      "sorting_1": "57.67",
+      "ranking_score": "57.67",
       "college_rank": "27"
     },
     {
@@ -411,7 +411,7 @@
       "GO (100)": "73.51",
       "OI (100)": "75.50",
       "PERCEPTION (100)": "34.97",
-      "sorting_1": "57.40",
+      "ranking_score": "57.40",
       "college_id": "IR-M-U-0436",
       "college_name": "Amrita Vishwa Vidyapeetham",
       "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Management/IR-M-U-0436.pdf",
@@ -432,7 +432,7 @@
       "PERCEPTION (100)": "13.62",
       "college_city": "Gautam Budh Nagar",
       "college_state": "Uttar Pradesh",
-      "sorting_1": "57.23",
+      "ranking_score": "57.23",
       "college_rank": "29"
     },
     {
@@ -441,7 +441,7 @@
       "GO (100)": "77.90",
       "OI (100)": "48.81",
       "PERCEPTION (100)": "32.08",
-      "sorting_1": "57.23",
+      "ranking_score": "57.23",
       "college_id": "IR-M-I-1075",
       "college_name": "Indian Institute of Technology Kanpur",
       "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Management/IR-M-I-1075.pdf",
@@ -462,7 +462,7 @@
       "PERCEPTION (100)": "29.78",
       "college_city": "Nagpur",
       "college_state": "Maharashtra",
-      "sorting_1": "56.94",
+      "ranking_score": "56.94",
       "college_rank": "31"
     },
     {
@@ -471,7 +471,7 @@
       "GO (100)": "84.36",
       "OI (100)": "68.13",
       "PERCEPTION (100)": "3.60",
-      "sorting_1": "56.62",
+      "ranking_score": "56.62",
       "college_id": "IR-M-S-14875",
       "college_name": "MICA",
       "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Management/IR-M-S-14875.pdf",
@@ -492,7 +492,7 @@
       "PERCEPTION (100)": "21.05",
       "college_city": "Gaya",
       "college_state": "Bihar",
-      "sorting_1": "56.27",
+      "ranking_score": "56.27",
       "college_rank": "33"
     },
     {
@@ -501,7 +501,7 @@
       "GO (100)": "81.85",
       "OI (100)": "73.36",
       "PERCEPTION (100)": "23.25",
-      "sorting_1": "56.15",
+      "ranking_score": "56.15",
       "college_id": "IR-M-N-16",
       "college_name": "Great Lakes Institute of Management",
       "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Management/IR-M-N-16.pdf",
@@ -522,7 +522,7 @@
       "PERCEPTION (100)": "8.25",
       "college_city": "Ghaziabad",
       "college_state": "Uttar Pradesh",
-      "sorting_1": "56.03",
+      "ranking_score": "56.03",
       "college_rank": "35"
     },
     {
@@ -531,7 +531,7 @@
       "GO (100)": "70.22",
       "OI (100)": "80.58",
       "PERCEPTION (100)": "20.06",
-      "sorting_1": "55.71",
+      "ranking_score": "55.71",
       "college_id": "IR-M-U-0747",
       "college_name": "Chandigarh University",
       "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Management/IR-M-U-0747.pdf",
@@ -552,7 +552,7 @@
       "PERCEPTION (100)": "13.23",
       "college_city": "Sanquelim",
       "college_state": "Goa",
-      "sorting_1": "55.67",
+      "ranking_score": "55.67",
       "college_rank": "37"
     },
     {
@@ -561,7 +561,7 @@
       "GO (100)": "62.87",
       "OI (100)": "75.19",
       "PERCEPTION (100)": "16.61",
-      "sorting_1": "55.49",
+      "ranking_score": "55.49",
       "college_id": "IR-M-U-0379",
       "college_name": "Lovely Professional University",
       "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Management/IR-M-U-0379.pdf",
@@ -582,7 +582,7 @@
       "PERCEPTION (100)": "18.02",
       "college_city": "Hyderabad",
       "college_state": "Telangana",
-      "sorting_1": "55.31",
+      "ranking_score": "55.31",
       "college_rank": "39"
     },
     {
@@ -591,7 +591,7 @@
       "GO (100)": "87.23",
       "OI (100)": "69.58",
       "PERCEPTION (100)": "9.12",
-      "sorting_1": "54.89",
+      "ranking_score": "54.89",
       "college_id": "IR-M-I-1064",
       "college_name": "International Management Institute",
       "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Management/IR-M-I-1064.pdf",
@@ -612,7 +612,7 @@
       "PERCEPTION (100)": "28.99",
       "college_city": "Dehradun",
       "college_state": "Uttarakhand",
-      "sorting_1": "54.82",
+      "ranking_score": "54.82",
       "college_rank": "41"
     },
     {
@@ -621,7 +621,7 @@
       "GO (100)": "86.87",
       "OI (100)": "73.31",
       "PERCEPTION (100)": "28.18",
-      "sorting_1": "54.64",
+      "ranking_score": "54.64",
       "college_id": "IR-M-U-1004",
       "college_name": "Indian Institute of Management Jammu (IIMJ)",
       "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Management/IR-M-U-1004.pdf",
@@ -642,7 +642,7 @@
       "PERCEPTION (100)": "21.69",
       "college_city": "Bhubaneswar",
       "college_state": "Odisha",
-      "sorting_1": "54.49",
+      "ranking_score": "54.49",
       "college_rank": "43"
     },
     {
@@ -651,7 +651,7 @@
       "GO (100)": "63.22",
       "OI (100)": "72.33",
       "PERCEPTION (100)": "8.69",
-      "sorting_1": "53.26",
+      "ranking_score": "53.26",
       "college_id": "IR-M-I-1480",
       "college_name": "Thapar Institute of Engineering and Technology (Deemed-to-be-university)",
       "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Management/IR-M-I-1480.pdf",
@@ -672,7 +672,7 @@
       "PERCEPTION (100)": "25.35",
       "college_city": "Noida",
       "college_state": "Uttar Pradesh",
-      "sorting_1": "53.23",
+      "ranking_score": "53.23",
       "college_rank": "45"
     },
     {
@@ -681,7 +681,7 @@
       "GO (100)": "55.53",
       "OI (100)": "63.79",
       "PERCEPTION (100)": "16.96",
-      "sorting_1": "52.78",
+      "ranking_score": "52.78",
       "college_id": "IR-M-U-0205",
       "college_name": "Indian Institute of Technology (Indian School of Mines) Dhanbad",
       "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Management/IR-M-U-0205.pdf",
@@ -702,7 +702,7 @@
       "PERCEPTION (100)": "22.63",
       "college_city": "Amritsar",
       "college_state": "Punjab",
-      "sorting_1": "52.57",
+      "ranking_score": "52.57",
       "college_rank": "47"
     },
     {
@@ -711,7 +711,7 @@
       "GO (100)": "81.82",
       "OI (100)": "56.41",
       "PERCEPTION (100)": "27.63",
-      "sorting_1": "52.26",
+      "ranking_score": "52.26",
       "college_id": "IR-M-U-0500",
       "college_name": "Banaras Hindu University",
       "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Management/IR-M-U-0500.pdf",
@@ -732,7 +732,7 @@
       "PERCEPTION (100)": "12.84",
       "college_city": "Anand",
       "college_state": "Gujarat",
-      "sorting_1": "51.54",
+      "ranking_score": "51.54",
       "college_rank": "49"
     },
     {
@@ -741,7 +741,7 @@
       "GO (100)": "81.32",
       "OI (100)": "75.56",
       "PERCEPTION (100)": "30.31",
-      "sorting_1": "51.47",
+      "ranking_score": "51.47",
       "college_id": "IR-M-S-6",
       "college_name": "Indian Institute of Management Sambalpur",
       "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Management/IR-M-S-6.pdf",
@@ -762,7 +762,7 @@
       "PERCEPTION (100)": "26.50",
       "college_city": "Tiruchirappalli",
       "college_state": "Tamil Nadu",
-      "sorting_1": "51.40",
+      "ranking_score": "51.40",
       "college_rank": "51"
     },
     {
@@ -771,7 +771,7 @@
       "GO (100)": "72.51",
       "OI (100)": "79.25",
       "PERCEPTION (100)": "3.10",
-      "sorting_1": "51.35",
+      "ranking_score": "51.35",
       "college_id": "IR-M-S-17295",
       "college_name": "Great Lakes Institute of Management",
       "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Management/IR-M-S-17295.pdf",
@@ -792,7 +792,7 @@
       "PERCEPTION (100)": "13.23",
       "college_city": "New Delhi",
       "college_state": "Delhi",
-      "sorting_1": "51.08",
+      "ranking_score": "51.08",
       "college_rank": "53"
     },
     {
@@ -801,7 +801,7 @@
       "GO (100)": "57.30",
       "OI (100)": "75.06",
       "PERCEPTION (100)": "5.52",
-      "sorting_1": "51.02",
+      "ranking_score": "51.02",
       "college_id": "IR-M-U-0373",
       "college_name": "Chitkara University",
       "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Management/IR-M-U-0373.pdf",
@@ -822,7 +822,7 @@
       "PERCEPTION (100)": "8.69",
       "college_city": "Ahmedabad",
       "college_state": "Gujarat",
-      "sorting_1": "51.01",
+      "ranking_score": "51.01",
       "college_rank": "55"
     },
     {
@@ -831,7 +831,7 @@
       "GO (100)": "79.30",
       "OI (100)": "66.28",
       "PERCEPTION (100)": "1.06",
-      "sorting_1": "50.97",
+      "ranking_score": "50.97",
       "college_id": "IR-M-I-1408",
       "college_name": "International Management Institute, Kolkata",
       "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Management/IR-M-I-1408.pdf",
@@ -852,7 +852,7 @@
       "PERCEPTION (100)": "15.88",
       "college_city": "Sirmaur",
       "college_state": "Himachal Pradesh",
-      "sorting_1": "50.92",
+      "ranking_score": "50.92",
       "college_rank": "57"
     },
     {
@@ -861,7 +861,7 @@
       "GO (100)": "81.91",
       "OI (100)": "70.48",
       "PERCEPTION (100)": "15.51",
-      "sorting_1": "50.78",
+      "ranking_score": "50.78",
       "college_id": "IR-M-S-156",
       "college_name": "T. A. Pai Management Institute, Manipal",
       "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Management/IR-M-S-156.pdf",
@@ -882,7 +882,7 @@
       "PERCEPTION (100)": "26.50",
       "college_city": "Dehradun",
       "college_state": "Uttarakhand",
-      "sorting_1": "50.59",
+      "ranking_score": "50.59",
       "college_rank": "59"
     },
     {
@@ -891,7 +891,7 @@
       "GO (100)": "69.90",
       "OI (100)": "72.45",
       "PERCEPTION (100)": "42.58",
-      "sorting_1": "50.56",
+      "ranking_score": "50.56",
       "college_id": "IR-M-U-0217",
       "college_name": "Christ University",
       "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Management/IR-M-U-0217.pdf",
@@ -912,7 +912,7 @@
       "PERCEPTION (100)": "2.60",
       "college_city": "Bhubaneswar",
       "college_state": "Odisha",
-      "sorting_1": "50.38",
+      "ranking_score": "50.38",
       "college_rank": "61"
     },
     {
@@ -921,7 +921,7 @@
       "GO (100)": "69.03",
       "OI (100)": "75.46",
       "PERCEPTION (100)": "12.04",
-      "sorting_1": "49.69",
+      "ranking_score": "49.69",
       "college_id": "IR-M-U-0363",
       "college_name": "Siksha `O` Anusandhan",
       "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Management/IR-M-U-0363.pdf",
@@ -942,7 +942,7 @@
       "PERCEPTION (100)": "9.12",
       "college_city": "Mumbai",
       "college_state": "Maharashtra",
-      "sorting_1": "49.66",
+      "ranking_score": "49.66",
       "college_rank": "63"
     },
     {
@@ -951,7 +951,7 @@
       "GO (100)": "80.54",
       "OI (100)": "65.89",
       "PERCEPTION (100)": "9.55",
-      "sorting_1": "49.44",
+      "ranking_score": "49.44",
       "college_id": "IR-M-S-354",
       "college_name": "Birla Institute of Management Technology",
       "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Management/IR-M-S-354.pdf",
@@ -972,7 +972,7 @@
       "PERCEPTION (100)": "14.76",
       "college_city": "New Delhi",
       "college_state": "Delhi",
-      "sorting_1": "49.40",
+      "ranking_score": "49.40",
       "college_rank": "65"
     },
     {
@@ -981,7 +981,7 @@
       "GO (100)": "72.60",
       "OI (100)": "61.76",
       "PERCEPTION (100)": "29.25",
-      "sorting_1": "49.26",
+      "ranking_score": "49.26",
       "college_id": "IR-M-S-331",
       "college_name": "Loyola Institute of Business Administration",
       "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Management/IR-M-S-331.pdf",
@@ -1002,7 +1002,7 @@
       "PERCEPTION (100)": "7.36",
       "college_city": "Bhubaneswar",
       "college_state": "Odisha",
-      "sorting_1": "49.24",
+      "ranking_score": "49.24",
       "college_rank": "67"
     },
     {
@@ -1011,7 +1011,7 @@
       "GO (100)": "55.61",
       "OI (100)": "57.51",
       "PERCEPTION (100)": "3.10",
-      "sorting_1": "49.14",
+      "ranking_score": "49.14",
       "college_id": "IR-M-U-0410",
       "college_name": "Malaviya National Institute of Technology",
       "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Management/IR-M-U-0410.pdf",
@@ -1032,7 +1032,7 @@
       "PERCEPTION (100)": "38.52",
       "college_city": "Chennai",
       "college_state": "Tamil Nadu",
-      "sorting_1": "48.92",
+      "ranking_score": "48.92",
       "college_rank": "69"
     },
     {
@@ -1041,7 +1041,7 @@
       "GO (100)": "68.52",
       "OI (100)": "53.44",
       "PERCEPTION (100)": "12.84",
-      "sorting_1": "48.68",
+      "ranking_score": "48.68",
       "college_id": "IR-M-U-0496",
       "college_name": "Aligarh Muslim University",
       "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Management/IR-M-U-0496.pdf",
@@ -1062,7 +1062,7 @@
       "PERCEPTION (100)": "11.64",
       "college_city": "Bengaluru",
       "college_state": "Karnataka",
-      "sorting_1": "48.38",
+      "ranking_score": "48.38",
       "college_rank": "71"
     },
     {
@@ -1071,7 +1071,7 @@
       "GO (100)": "72.36",
       "OI (100)": "60.82",
       "PERCEPTION (100)": "24.76",
-      "sorting_1": "48.32",
+      "ranking_score": "48.32",
       "college_id": "IR-M-S-419",
       "college_name": "Jaipuria Institute of Management, Lucknow",
       "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Management/IR-M-S-419.pdf",
@@ -1092,7 +1092,7 @@
       "PERCEPTION (100)": "2.60",
       "college_city": "Jaipur",
       "college_state": "Rajasthan",
-      "sorting_1": "48.10",
+      "ranking_score": "48.10",
       "college_rank": "73"
     },
     {
@@ -1101,7 +1101,7 @@
       "GO (100)": "51.62",
       "OI (100)": "77.73",
       "PERCEPTION (100)": "3.10",
-      "sorting_1": "47.92",
+      "ranking_score": "47.92",
       "college_id": "IR-M-I-1441",
       "college_name": "Saveetha Institute of Medical and Technical Sciences",
       "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Management/IR-M-I-1441.pdf",
@@ -1122,7 +1122,7 @@
       "PERCEPTION (100)": "14.38",
       "college_city": "Jaipur",
       "college_state": "Rajasthan",
-      "sorting_1": "47.56",
+      "ranking_score": "47.56",
       "college_rank": "75"
     },
     {
@@ -1131,7 +1131,7 @@
       "GO (100)": "66.03",
       "OI (100)": "54.08",
       "PERCEPTION (100)": "12.84",
-      "sorting_1": "47.55",
+      "ranking_score": "47.55",
       "college_id": "IR-M-U-0263",
       "college_name": "National Institute of Technology Calicut",
       "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Management/IR-M-U-0263.pdf",
@@ -1152,7 +1152,7 @@
       "PERCEPTION (100)": "12.84",
       "college_city": "Bengaluru",
       "college_state": "Karnataka",
-      "sorting_1": "47.47",
+      "ranking_score": "47.47",
       "college_rank": "77"
     },
     {
@@ -1161,7 +1161,7 @@
       "GO (100)": "70.05",
       "OI (100)": "74.13",
       "PERCEPTION (100)": "3.60",
-      "sorting_1": "47.39",
+      "ranking_score": "47.39",
       "college_id": "IR-M-U-0107",
       "college_name": "Jamia Hamdard",
       "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Management/IR-M-U-0107.pdf",
@@ -1182,7 +1182,7 @@
       "PERCEPTION (100)": "3.10",
       "college_city": "Vaddeswaram",
       "college_state": "Andhra Pradesh",
-      "sorting_1": "47.27",
+      "ranking_score": "47.27",
       "college_rank": "79"
     },
     {
@@ -1191,7 +1191,7 @@
       "GO (100)": "76.60",
       "OI (100)": "57.88",
       "PERCEPTION (100)": "45.02",
-      "sorting_1": "47.13",
+      "ranking_score": "47.13",
       "college_id": "IR-M-C-37013",
       "college_name": "PSG College of Technology",
       "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Management/IR-M-C-37013.pdf",
@@ -1212,7 +1212,7 @@
       "PERCEPTION (100)": "8.69",
       "college_city": "Cochin",
       "college_state": "Kerala",
-      "sorting_1": "47.08",
+      "ranking_score": "47.08",
       "college_rank": "81"
     },
     {
@@ -1221,7 +1221,7 @@
       "GO (100)": "64.38",
       "OI (100)": "47.67",
       "PERCEPTION (100)": "20.06",
-      "sorting_1": "47.02",
+      "ranking_score": "47.02",
       "college_id": "IR-M-C-36557",
       "college_name": "Thiagarajar School of Management",
       "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Management/IR-M-C-36557.pdf",
@@ -1242,7 +1242,7 @@
       "PERCEPTION (100)": "3.10",
       "college_city": "Gurgaon",
       "college_state": "Haryana",
-      "sorting_1": "46.67",
+      "ranking_score": "46.67",
       "college_rank": "83"
     },
     {
@@ -1251,7 +1251,7 @@
       "GO (100)": "81.80",
       "OI (100)": "60.71",
       "PERCEPTION (100)": "6.45",
-      "sorting_1": "46.53",
+      "ranking_score": "46.53",
       "college_id": "IR-M-S-19472",
       "college_name": "Prin. L.N. Welingkar Institute of Management Development and Research (PGDM)",
       "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Management/IR-M-S-19472.pdf",
@@ -1272,7 +1272,7 @@
       "PERCEPTION (100)": "11.23",
       "college_city": "Gwalior",
       "college_state": "Madhya Pradesh",
-      "sorting_1": "46.47",
+      "ranking_score": "46.47",
       "college_rank": "85"
     },
     {
@@ -1281,7 +1281,7 @@
       "GO (100)": "78.23",
       "OI (100)": "82.67",
       "PERCEPTION (100)": "4.57",
-      "sorting_1": "46.42",
+      "ranking_score": "46.42",
       "college_id": "IR-M-U-0498",
       "college_name": "Babasaheb Bhimrao Ambedkar University",
       "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Management/IR-M-U-0498.pdf",
@@ -1302,7 +1302,7 @@
       "PERCEPTION (100)": "12.44",
       "college_city": "Delhi",
       "college_state": "Delhi",
-      "sorting_1": "46.38",
+      "ranking_score": "46.38",
       "college_rank": "87"
     },
     {
@@ -1311,7 +1311,7 @@
       "GO (100)": "79.10",
       "OI (100)": "72.49",
       "PERCEPTION (100)": "11.23",
-      "sorting_1": "46.29",
+      "ranking_score": "46.29",
       "college_id": "IR-M-C-32887",
       "college_name": "New Delhi Institute of Management",
       "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Management/IR-M-C-32887.pdf",
@@ -1332,7 +1332,7 @@
       "PERCEPTION (100)": "2.09",
       "college_city": "Gandhinagar",
       "college_state": "Gujarat",
-      "sorting_1": "45.39",
+      "ranking_score": "45.39",
       "college_rank": "89"
     },
     {
@@ -1341,7 +1341,7 @@
       "GO (100)": "64.18",
       "OI (100)": "54.84",
       "PERCEPTION (100)": "12.44",
-      "sorting_1": "45.00",
+      "ranking_score": "45.00",
       "college_id": "IR-M-U-0202",
       "college_name": "Birla Institute of Technology",
       "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Management/IR-M-U-0202.pdf",
@@ -1362,7 +1362,7 @@
       "PERCEPTION (100)": "2.09",
       "college_city": "Pune",
       "college_state": "Maharashtra",
-      "sorting_1": "44.85",
+      "ranking_score": "44.85",
       "college_rank": "91"
     },
     {
@@ -1371,7 +1371,7 @@
       "GO (100)": "69.61",
       "OI (100)": "55.78",
       "PERCEPTION (100)": "18.02",
-      "sorting_1": "44.70",
+      "ranking_score": "44.70",
       "college_id": "IR-M-U-0078",
       "college_name": "Panjab University",
       "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Management/IR-M-U-0078.pdf",
@@ -1392,7 +1392,7 @@
       "PERCEPTION (100)": "8.69",
       "college_city": "Cochin",
       "college_state": "Kerala",
-      "sorting_1": "44.33",
+      "ranking_score": "44.33",
       "college_rank": "93"
     },
     {
@@ -1401,7 +1401,7 @@
       "GO (100)": "82.36",
       "OI (100)": "48.63",
       "PERCEPTION (100)": "34.73",
-      "sorting_1": "44.17",
+      "ranking_score": "44.17",
       "college_id": "IR-M-N-4",
       "college_name": "Bharathidasan Institute of Management",
       "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Management/IR-M-N-4.pdf",
@@ -1422,7 +1422,7 @@
       "PERCEPTION (100)": "3.60",
       "college_city": "Tezpur",
       "college_state": "Assam",
-      "sorting_1": "43.48",
+      "ranking_score": "43.48",
       "college_rank": "95"
     },
     {
@@ -1431,7 +1431,7 @@
       "GO (100)": "67.84",
       "OI (100)": "60.66",
       "PERCEPTION (100)": "4.09",
-      "sorting_1": "43.17",
+      "ranking_score": "43.17",
       "college_id": "IR-M-S-14553",
       "college_name": "National Institute of Agricultural Extension Management",
       "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Management/IR-M-S-14553.pdf",
@@ -1452,7 +1452,7 @@
       "PERCEPTION (100)": "9.55",
       "college_city": "Hyderabad",
       "college_state": "Telangana",
-      "sorting_1": "43.01",
+      "ranking_score": "43.01",
       "college_rank": "97"
     },
     {
@@ -1461,7 +1461,7 @@
       "GO (100)": "64.51",
       "OI (100)": "65.12",
       "PERCEPTION (100)": "2.60",
-      "sorting_1": "42.90",
+      "ranking_score": "42.90",
       "college_id": "IR-M-U-0643",
       "college_name": "Galgotias University",
       "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Management/IR-M-U-0643.pdf",
@@ -1482,7 +1482,7 @@
       "PERCEPTION (100)": "9.98",
       "college_city": "Sri City",
       "college_state": "Andhra Pradesh",
-      "sorting_1": "42.82",
+      "ranking_score": "42.82",
       "college_rank": "99"
     },
     {
@@ -1491,7 +1491,7 @@
       "GO (100)": "46.53",
       "OI (100)": "46.36",
       "PERCEPTION (100)": "9.98",
-      "sorting_1": "42.63",
+      "ranking_score": "42.63",
       "college_id": "IR-M-U-0025",
       "college_name": "National Institute of Technology Warangal",
       "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Management/IR-M-U-0025.pdf",

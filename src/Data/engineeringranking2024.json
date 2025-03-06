@@ -1,5 +1,5 @@
 {
-    "https://www.nirfindia.org/Ranki": [
+    "Engineering_Ranking": [
         {
             "college_id": "IR-E-U-0456",
             "college_name": "Indian Institute of Technology Madras",
@@ -12,7 +12,7 @@
             "PERCEPTION (100)": "100.00",
             "college_city": "Chennai",
             "college_state": "Tamil Nadu",
-            "sorting_1": "89.46",
+            "ranking_score": "89.46",
             "college_rank": "1"
         },
         {
@@ -21,7 +21,7 @@
             "GO (100)": "84.52",
             "OI (100)": "65.39",
             "PERCEPTION (100)": "98.53",
-            "sorting_1": "86.66",
+            "ranking_score": "86.66",
             "college_id": "IR-E-I-1074",
             "college_name": "Indian Institute of Technology Delhi",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Engineering/IR-E-I-1074.pdf",
@@ -42,7 +42,7 @@
             "PERCEPTION (100)": "91.13",
             "college_city": "Mumbai",
             "college_state": "Maharashtra",
-            "sorting_1": "83.09",
+            "ranking_score": "83.09",
             "college_rank": "3"
         },
         {
@@ -51,7 +51,7 @@
             "GO (100)": "89.05",
             "OI (100)": "60.62",
             "PERCEPTION (100)": "84.19",
-            "sorting_1": "82.79",
+            "ranking_score": "82.79",
             "college_id": "IR-E-I-1075",
             "college_name": "Indian Institute of Technology Kanpur",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Engineering/IR-E-I-1075.pdf",
@@ -72,7 +72,7 @@
             "PERCEPTION (100)": "80.26",
             "college_city": "Kharagpur",
             "college_state": "West Bengal",
-            "sorting_1": "76.88",
+            "ranking_score": "76.88",
             "college_rank": "5"
         },
         {
@@ -81,7 +81,7 @@
             "GO (100)": "87.35",
             "OI (100)": "62.20",
             "PERCEPTION (100)": "65.79",
-            "sorting_1": "76.00",
+            "ranking_score": "76.00",
             "college_id": "IR-E-U-0560",
             "college_name": "Indian Institute of Technology Roorkee",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Engineering/IR-E-U-0560.pdf",
@@ -102,7 +102,7 @@
             "PERCEPTION (100)": "55.38",
             "college_city": "Guwahati",
             "college_state": "Assam",
-            "sorting_1": "71.86",
+            "ranking_score": "71.86",
             "college_rank": "7"
         },
         {
@@ -111,7 +111,7 @@
             "GO (100)": "77.88",
             "OI (100)": "55.70",
             "PERCEPTION (100)": "65.31",
-            "sorting_1": "71.55",
+            "ranking_score": "71.55",
             "college_id": "IR-E-U-0013",
             "college_name": "Indian Institute of Technology Hyderabad",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Engineering/IR-E-U-0013.pdf",
@@ -132,7 +132,7 @@
             "PERCEPTION (100)": "68.07",
             "college_city": "Tiruchirappalli",
             "college_state": "Tamil Nadu",
-            "sorting_1": "66.88",
+            "ranking_score": "66.88",
             "college_rank": "9"
         },
         {
@@ -141,7 +141,7 @@
             "GO (100)": "84.78",
             "OI (100)": "57.89",
             "PERCEPTION (100)": "60.05",
-            "sorting_1": "66.69",
+            "ranking_score": "66.69",
             "college_id": "IR-E-U-0701",
             "college_name": "Indian Institute of Technology (Banaras Hindu University) Varanasi",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Engineering/IR-E-U-0701.pdf",
@@ -162,7 +162,7 @@
             "PERCEPTION (100)": "49.28",
             "college_city": "Vellore",
             "college_state": "Tamil Nadu",
-            "sorting_1": "66.22",
+            "ranking_score": "66.22",
             "college_rank": "11"
         },
         {
@@ -171,7 +171,7 @@
             "GO (100)": "76.55",
             "OI (100)": "48.89",
             "PERCEPTION (100)": "41.13",
-            "sorting_1": "65.62",
+            "ranking_score": "65.62",
             "college_id": "IR-E-U-0575",
             "college_name": "Jadavpur University",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Engineering/IR-E-U-0575.pdf",
@@ -192,7 +192,7 @@
             "PERCEPTION (100)": "17.57",
             "college_city": "Chennai",
             "college_state": "Tamil Nadu",
-            "sorting_1": "65.41",
+            "ranking_score": "65.41",
             "college_rank": "13"
         },
         {
@@ -201,7 +201,7 @@
             "GO (100)": "63.43",
             "OI (100)": "48.67",
             "PERCEPTION (100)": "65.97",
-            "sorting_1": "65.34",
+            "ranking_score": "65.34",
             "college_id": "IR-E-U-0439",
             "college_name": "Anna University",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Engineering/IR-E-U-0439.pdf",
@@ -222,7 +222,7 @@
             "PERCEPTION (100)": "33.72",
             "college_city": "Dhanbad",
             "college_state": "Jharkhand",
-            "sorting_1": "64.83",
+            "ranking_score": "64.83",
             "college_rank": "15"
         },
         {
@@ -231,7 +231,7 @@
             "GO (100)": "75.82",
             "OI (100)": "60.67",
             "PERCEPTION (100)": "29.90",
-            "sorting_1": "64.72",
+            "ranking_score": "64.72",
             "college_id": "IR-E-U-0273",
             "college_name": "Indian Institute of Technology Indore",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Engineering/IR-E-U-0273.pdf",
@@ -252,7 +252,7 @@
             "PERCEPTION (100)": "52.37",
             "college_city": "Surathkal",
             "college_state": "Karnataka",
-            "sorting_1": "64.27",
+            "ranking_score": "64.27",
             "college_rank": "17"
         },
         {
@@ -261,7 +261,7 @@
             "GO (100)": "70.33",
             "OI (100)": "65.56",
             "PERCEPTION (100)": "36.08",
-            "sorting_1": "63.42",
+            "ranking_score": "63.42",
             "college_id": "IR-E-U-0139",
             "college_name": "Indian Institute of Technology Gandhinagar",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Engineering/IR-E-U-0139.pdf",
@@ -282,7 +282,7 @@
             "PERCEPTION (100)": "27.38",
             "college_city": "Rourkela",
             "college_state": "Odisha",
-            "sorting_1": "63.38",
+            "ranking_score": "63.38",
             "college_rank": "19"
         },
         {
@@ -291,7 +291,7 @@
             "GO (100)": "79.47",
             "OI (100)": "58.14",
             "PERCEPTION (100)": "36.28",
-            "sorting_1": "63.04",
+            "ranking_score": "63.04",
             "college_id": "IR-E-U-0391",
             "college_name": "Birla Institute of Technology and Science, Pilani",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Engineering/IR-E-U-0391.pdf",
@@ -312,7 +312,7 @@
             "PERCEPTION (100)": "32.90",
             "college_city": "Warangal",
             "college_state": "Telangana",
-            "sorting_1": "61.72",
+            "ranking_score": "61.72",
             "college_rank": "21"
         },
         {
@@ -321,7 +321,7 @@
             "GO (100)": "73.59",
             "OI (100)": "65.15",
             "PERCEPTION (100)": "32.06",
-            "sorting_1": "61.56",
+            "ranking_score": "61.56",
             "college_id": "IR-E-U-0378",
             "college_name": "Indian Institute of Technology Ropar",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Engineering/IR-E-U-0378.pdf",
@@ -342,7 +342,7 @@
             "PERCEPTION (100)": "37.03",
             "college_city": "Coimbatore",
             "college_state": "Tamil Nadu",
-            "sorting_1": "61.29",
+            "ranking_score": "61.29",
             "college_rank": "23"
         },
         {
@@ -351,7 +351,7 @@
             "GO (100)": "75.46",
             "OI (100)": "66.84",
             "PERCEPTION (100)": "19.33",
-            "sorting_1": "61.28",
+            "ranking_score": "61.28",
             "college_id": "IR-E-U-0108",
             "college_name": "Jamia Millia Islamia",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Engineering/IR-E-U-0108.pdf",
@@ -372,7 +372,7 @@
             "PERCEPTION (100)": "40.10",
             "college_city": "Kozhikode",
             "college_state": "Kerala",
-            "sorting_1": "61.19",
+            "ranking_score": "61.19",
             "college_rank": "25"
         },
         {
@@ -381,7 +381,7 @@
             "GO (100)": "66.25",
             "OI (100)": "73.63",
             "PERCEPTION (100)": "30.12",
-            "sorting_1": "60.97",
+            "ranking_score": "60.97",
             "college_id": "IR-E-U-0363",
             "college_name": "Siksha `O` Anusandhan",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Engineering/IR-E-U-0363.pdf",
@@ -402,7 +402,7 @@
             "PERCEPTION (100)": "49.00",
             "college_city": "New Delhi",
             "college_state": "Delhi",
-            "sorting_1": "60.78",
+            "ranking_score": "60.78",
             "college_rank": "27"
         },
         {
@@ -411,7 +411,7 @@
             "GO (100)": "72.26",
             "OI (100)": "66.24",
             "PERCEPTION (100)": "13.50",
-            "sorting_1": "60.61",
+            "ranking_score": "60.61",
             "college_id": "IR-E-U-0395",
             "college_name": "Indian Institute of Technology Jodhpur",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Engineering/IR-E-U-0395.pdf",
@@ -432,7 +432,7 @@
             "PERCEPTION (100)": "24.95",
             "college_city": "Patiala",
             "college_state": "Punjab",
-            "sorting_1": "60.35",
+            "ranking_score": "60.35",
             "college_rank": "29"
         },
         {
@@ -441,7 +441,7 @@
             "GO (100)": "61.72",
             "OI (100)": "63.28",
             "PERCEPTION (100)": "8.23",
-            "sorting_1": "59.91",
+            "ranking_score": "59.91",
             "college_id": "IR-E-U-0497",
             "college_name": "Amity University",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Engineering/IR-E-U-0497.pdf",
@@ -462,7 +462,7 @@
             "PERCEPTION (100)": "19.90",
             "college_city": "Mandi",
             "college_state": "Himachal Pradesh",
-            "sorting_1": "59.86",
+            "ranking_score": "59.86",
             "college_rank": "31"
         },
         {
@@ -471,7 +471,7 @@
             "GO (100)": "66.21",
             "OI (100)": "75.56",
             "PERCEPTION (100)": "24.19",
-            "sorting_1": "59.82",
+            "ranking_score": "59.82",
             "college_id": "IR-E-U-0747",
             "college_name": "Chandigarh University",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Engineering/IR-E-U-0747.pdf",
@@ -492,7 +492,7 @@
             "PERCEPTION (100)": "21.83",
             "college_city": "Aligarh",
             "college_state": "Uttar Pradesh",
-            "sorting_1": "59.16",
+            "ranking_score": "59.16",
             "college_rank": "33"
         },
         {
@@ -501,7 +501,7 @@
             "GO (100)": "77.73",
             "OI (100)": "53.00",
             "PERCEPTION (100)": "25.69",
-            "sorting_1": "58.40",
+            "ranking_score": "58.40",
             "college_id": "IR-E-U-0064",
             "college_name": "Indian Institute of Technology Patna",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Engineering/IR-E-U-0064.pdf",
@@ -522,7 +522,7 @@
             "PERCEPTION (100)": "18.17",
             "college_city": "Vaddeswaram",
             "college_state": "Andhra Pradesh",
-            "sorting_1": "58.24",
+            "ranking_score": "58.24",
             "college_rank": "35"
         },
         {
@@ -531,7 +531,7 @@
             "GO (100)": "71.56",
             "OI (100)": "76.14",
             "PERCEPTION (100)": "10.42",
-            "sorting_1": "58.20",
+            "ranking_score": "58.20",
             "college_id": "IR-E-U-0458",
             "college_name": "Kalasalingam Academy of Research and Education",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Engineering/IR-E-U-0458.pdf",
@@ -552,7 +552,7 @@
             "PERCEPTION (100)": "16.36",
             "college_city": "Bhubaneswar",
             "college_state": "Odisha",
-            "sorting_1": "58.00",
+            "ranking_score": "58.00",
             "college_rank": "37"
         },
         {
@@ -561,7 +561,7 @@
             "GO (100)": "72.10",
             "OI (100)": "67.21",
             "PERCEPTION (100)": "15.11",
-            "sorting_1": "57.97",
+            "ranking_score": "57.97",
             "college_id": "IR-E-U-0476",
             "college_name": "Shanmugha Arts Science Technology and Research Academy",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Engineering/IR-E-U-0476.pdf",
@@ -582,7 +582,7 @@
             "PERCEPTION (100)": "21.28",
             "college_city": "Nagpur",
             "college_state": "Maharashtra",
-            "sorting_1": "57.89",
+            "ranking_score": "57.89",
             "college_rank": "39"
         },
         {
@@ -591,7 +591,7 @@
             "GO (100)": "73.05",
             "OI (100)": "56.86",
             "PERCEPTION (100)": "10.06",
-            "sorting_1": "57.60",
+            "ranking_score": "57.60",
             "college_id": "IR-E-U-0055",
             "college_name": "National Institute of Technology Silchar",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Engineering/IR-E-U-0055.pdf",
@@ -612,7 +612,7 @@
             "PERCEPTION (100)": "20.74",
             "college_city": "Mumbai",
             "college_state": "Maharashtra",
-            "sorting_1": "56.93",
+            "ranking_score": "56.93",
             "college_rank": "41"
         },
         {
@@ -621,7 +621,7 @@
             "GO (100)": "51.10",
             "OI (100)": "62.70",
             "PERCEPTION (100)": "25.69",
-            "sorting_1": "56.65",
+            "ranking_score": "56.65",
             "college_id": "IR-E-U-0564",
             "college_name": "UPES",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Engineering/IR-E-U-0564.pdf",
@@ -642,7 +642,7 @@
             "PERCEPTION (100)": "11.12",
             "college_city": "Jaipur",
             "college_state": "Rajasthan",
-            "sorting_1": "56.35",
+            "ranking_score": "56.35",
             "college_rank": "43"
         },
         {
@@ -651,7 +651,7 @@
             "GO (100)": "78.05",
             "OI (100)": "58.99",
             "PERCEPTION (100)": "20.18",
-            "sorting_1": "56.26",
+            "ranking_score": "56.26",
             "college_id": "IR-E-U-0577",
             "college_name": "National Institute of Technology Durgapur",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Engineering/IR-E-U-0577.pdf",
@@ -672,7 +672,7 @@
             "PERCEPTION (100)": "21.83",
             "college_city": "Delhi",
             "college_state": "Delhi",
-            "sorting_1": "55.67",
+            "ranking_score": "55.67",
             "college_rank": "45"
         },
         {
@@ -681,7 +681,7 @@
             "GO (100)": "69.34",
             "OI (100)": "57.10",
             "PERCEPTION (100)": "20.46",
-            "sorting_1": "55.01",
+            "ranking_score": "55.01",
             "college_id": "IR-E-C-16604",
             "college_name": "Sri Sivasubramaniya Nadar College of Engineering",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Engineering/IR-E-C-16604.pdf",
@@ -702,7 +702,7 @@
             "PERCEPTION (100)": "26.90",
             "college_city": "Hyderabad",
             "college_state": "Telangana",
-            "sorting_1": "54.29",
+            "ranking_score": "54.29",
             "college_rank": "47"
         },
         {
@@ -711,7 +711,7 @@
             "GO (100)": "62.50",
             "OI (100)": "52.44",
             "PERCEPTION (100)": "19.04",
-            "sorting_1": "54.18",
+            "ranking_score": "54.18",
             "college_id": "IR-E-U-0202",
             "college_name": "Birla Institute of Technology",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Engineering/IR-E-U-0202.pdf",
@@ -732,7 +732,7 @@
             "PERCEPTION (100)": "31.85",
             "college_city": "Howrah",
             "college_state": "West Bengal",
-            "sorting_1": "54.17",
+            "ranking_score": "54.17",
             "college_rank": "49"
         },
         {
@@ -741,7 +741,7 @@
             "GO (100)": "57.76",
             "OI (100)": "67.10",
             "PERCEPTION (100)": "21.83",
-            "sorting_1": "54.16",
+            "ranking_score": "54.16",
             "college_id": "IR-E-U-0379",
             "college_name": "Lovely Professional University",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Engineering/IR-E-U-0379.pdf",
@@ -762,7 +762,7 @@
             "PERCEPTION (100)": "32.27",
             "college_city": "Thiruvananthapuram",
             "college_state": "Kerala",
-            "sorting_1": "53.13",
+            "ranking_score": "53.13",
             "college_rank": "51"
         },
         {
@@ -771,7 +771,7 @@
             "GO (100)": "51.75",
             "OI (100)": "65.57",
             "PERCEPTION (100)": "30.99",
-            "sorting_1": "52.96",
+            "ranking_score": "52.96",
             "college_id": "IR-E-U-0555",
             "college_name": "Graphic Era University",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Engineering/IR-E-U-0555.pdf",
@@ -792,7 +792,7 @@
             "PERCEPTION (100)": "0.90",
             "college_city": "Chennai",
             "college_state": "Tamil Nadu",
-            "sorting_1": "52.85",
+            "ranking_score": "52.85",
             "college_rank": "53"
         },
         {
@@ -801,7 +801,7 @@
             "GO (100)": "74.96",
             "OI (100)": "58.35",
             "PERCEPTION (100)": "33.72",
-            "sorting_1": "52.54",
+            "ranking_score": "52.54",
             "college_id": "IR-E-U-0355",
             "college_name": "Indian Institute of Technology Bhubaneswar",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Engineering/IR-E-U-0355.pdf",
@@ -822,7 +822,7 @@
             "PERCEPTION (100)": "10.42",
             "college_city": "Patna",
             "college_state": "Bihar",
-            "sorting_1": "52.28",
+            "ranking_score": "52.28",
             "college_rank": "55"
         },
         {
@@ -831,7 +831,7 @@
             "GO (100)": "57.59",
             "OI (100)": "60.23",
             "PERCEPTION (100)": "30.56",
-            "sorting_1": "52.12",
+            "ranking_score": "52.12",
             "college_id": "IR-E-C-7252",
             "college_name": "Manipal Institute of Technology",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Engineering/IR-E-C-7252.pdf",
@@ -852,7 +852,7 @@
             "PERCEPTION (100)": "23.16",
             "college_city": "Delhi",
             "college_state": "Delhi",
-            "sorting_1": "51.52",
+            "ranking_score": "51.52",
             "college_rank": "57"
         },
         {
@@ -861,7 +861,7 @@
             "GO (100)": "60.13",
             "OI (100)": "60.22",
             "PERCEPTION (100)": "16.97",
-            "sorting_1": "51.11",
+            "ranking_score": "51.11",
             "college_id": "IR-E-U-0374",
             "college_name": "Dr. B R Ambedkar National Institute of Technology Jalandhar",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Engineering/IR-E-U-0374.pdf",
@@ -882,7 +882,7 @@
             "PERCEPTION (100)": "13.50",
             "college_city": "SURAT",
             "college_state": "Gujarat",
-            "sorting_1": "51.04",
+            "ranking_score": "51.04",
             "college_rank": "59"
         },
         {
@@ -891,7 +891,7 @@
             "GO (100)": "75.07",
             "OI (100)": "52.94",
             "PERCEPTION (100)": "18.17",
-            "sorting_1": "50.65",
+            "ranking_score": "50.65",
             "college_id": "IR-E-U-0530",
             "college_name": "Motilal Nehru National Institute of Technology",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Engineering/IR-E-U-0530.pdf",
@@ -912,7 +912,7 @@
             "PERCEPTION (100)": "25.20",
             "college_city": "YERPEDU",
             "college_state": "Andhra Pradesh",
-            "sorting_1": "50.58",
+            "ranking_score": "50.58",
             "college_rank": "61"
         },
         {
@@ -921,7 +921,7 @@
             "GO (100)": "60.00",
             "OI (100)": "52.87",
             "PERCEPTION (100)": "12.16",
-            "sorting_1": "50.53",
+            "ranking_score": "50.53",
             "college_id": "IR-E-U-0906",
             "college_name": "Indian Institute of Technology Jammu",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Engineering/IR-E-U-0906.pdf",
@@ -942,7 +942,7 @@
             "PERCEPTION (100)": "4.73",
             "college_city": "Pune",
             "college_state": "Maharashtra",
-            "sorting_1": "50.37",
+            "ranking_score": "50.37",
             "college_rank": "63"
         },
         {
@@ -951,7 +951,7 @@
             "GO (100)": "62.91",
             "OI (100)": "65.44",
             "PERCEPTION (100)": "22.36",
-            "sorting_1": "50.24",
+            "ranking_score": "50.24",
             "college_id": "IR-E-U-0878",
             "college_name": "Indian Institute of Technology Palakkad",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Engineering/IR-E-U-0878.pdf",
@@ -972,7 +972,7 @@
             "PERCEPTION (100)": "4.73",
             "college_city": "Jaipur",
             "college_state": "Rajasthan",
-            "sorting_1": "50.24",
+            "ranking_score": "50.24",
             "college_rank": "64"
         },
         {
@@ -981,7 +981,7 @@
             "GO (100)": "51.34",
             "OI (100)": "70.34",
             "PERCEPTION (100)": "12.83",
-            "sorting_1": "50.05",
+            "ranking_score": "50.05",
             "college_id": "IR-E-U-0474",
             "college_name": "Sathyabama Institute of Science and Technology",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Engineering/IR-E-U-0474.pdf",
@@ -1002,7 +1002,7 @@
             "PERCEPTION (100)": "54.15",
             "college_city": "Coimbatore",
             "college_state": "Tamil Nadu",
-            "sorting_1": "49.92",
+            "ranking_score": "49.92",
             "college_rank": "67"
         },
         {
@@ -1011,7 +1011,7 @@
             "GO (100)": "60.88",
             "OI (100)": "60.89",
             "PERCEPTION (100)": "3.49",
-            "sorting_1": "49.82",
+            "ranking_score": "49.82",
             "college_id": "IR-E-U-0619",
             "college_name": "National Institute of Technology Meghalaya",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Engineering/IR-E-U-0619.pdf",
@@ -1032,7 +1032,7 @@
             "PERCEPTION (100)": "7.10",
             "college_city": "Belgaum",
             "college_state": "Karnataka",
-            "sorting_1": "49.80",
+            "ranking_score": "49.80",
             "college_rank": "69"
         },
         {
@@ -1041,7 +1041,7 @@
             "GO (100)": "44.75",
             "OI (100)": "46.87",
             "PERCEPTION (100)": "6.72",
-            "sorting_1": "49.30",
+            "ranking_score": "49.30",
             "college_id": "IR-E-U-0042",
             "college_name": "University of Hyderabad",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Engineering/IR-E-U-0042.pdf",
@@ -1062,7 +1062,7 @@
             "PERCEPTION (100)": "3.91",
             "college_city": "Raipur",
             "college_state": "Chhattisgarh",
-            "sorting_1": "48.88",
+            "ranking_score": "48.88",
             "college_rank": "71"
         },
         {
@@ -1071,7 +1071,7 @@
             "GO (100)": "70.28",
             "OI (100)": "60.62",
             "PERCEPTION (100)": "11.47",
-            "sorting_1": "48.86",
+            "ranking_score": "48.86",
             "college_id": "IR-E-U-0284",
             "college_name": "Maulana Azad National Institute of Technology",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Engineering/IR-E-U-0284.pdf",
@@ -1092,7 +1092,7 @@
             "PERCEPTION (100)": "7.48",
             "college_city": "Raipur",
             "college_state": "Chhattisgarh",
-            "sorting_1": "48.80",
+            "ranking_score": "48.80",
             "college_rank": "73"
         },
         {
@@ -1101,7 +1101,7 @@
             "GO (100)": "68.42",
             "OI (100)": "58.93",
             "PERCEPTION (100)": "22.10",
-            "sorting_1": "48.61",
+            "ranking_score": "48.61",
             "college_id": "IR-E-U-0221",
             "college_name": "International Institute of Information Technology Bangalore",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Engineering/IR-E-U-0221.pdf",
@@ -1122,7 +1122,7 @@
             "PERCEPTION (100)": "22.36",
             "college_city": "Bengaluru",
             "college_state": "Karnataka",
-            "sorting_1": "48.33",
+            "ranking_score": "48.33",
             "college_rank": "75"
         },
         {
@@ -1131,7 +1131,7 @@
             "GO (100)": "49.36",
             "OI (100)": "65.02",
             "PERCEPTION (100)": "5.93",
-            "sorting_1": "48.22",
+            "ranking_score": "48.22",
             "college_id": "IR-E-U-0384",
             "college_name": "Sant Longowal Institute of Engineering and Technology",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Engineering/IR-E-U-0384.pdf",
@@ -1152,7 +1152,7 @@
             "PERCEPTION (100)": "33.51",
             "college_city": "Pune",
             "college_state": "Maharashtra",
-            "sorting_1": "47.89",
+            "ranking_score": "47.89",
             "college_rank": "77"
         },
         {
@@ -1161,7 +1161,7 @@
             "GO (100)": "73.66",
             "OI (100)": "72.16",
             "PERCEPTION (100)": "1.78",
-            "sorting_1": "47.86",
+            "ranking_score": "47.86",
             "college_id": "IR-E-U-0389",
             "college_name": "Banasthali Vidyapith",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Engineering/IR-E-U-0389.pdf",
@@ -1182,7 +1182,7 @@
             "PERCEPTION (100)": "6.33",
             "college_city": "Srinagar",
             "college_state": "Jammu and Kashmir",
-            "sorting_1": "47.76",
+            "ranking_score": "47.76",
             "college_rank": "79"
         },
         {
@@ -1191,7 +1191,7 @@
             "GO (100)": "69.08",
             "OI (100)": "59.78",
             "PERCEPTION (100)": "0.90",
-            "sorting_1": "47.43",
+            "ranking_score": "47.43",
             "college_id": "IR-E-U-0535",
             "college_name": "Rajiv Gandhi Institute of Petroleum Technology",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Engineering/IR-E-U-0535.pdf",
@@ -1212,7 +1212,7 @@
             "PERCEPTION (100)": "20.74",
             "college_city": "Kurukshetra",
             "college_state": "Haryana",
-            "sorting_1": "46.79",
+            "ranking_score": "46.79",
             "college_rank": "81"
         },
         {
@@ -1221,7 +1221,7 @@
             "GO (100)": "65.58",
             "OI (100)": "58.84",
             "PERCEPTION (100)": "9.34",
-            "sorting_1": "46.69",
+            "ranking_score": "46.69",
             "college_id": "IR-E-U-0493",
             "college_name": "National Institute of Technology Agartala",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Engineering/IR-E-U-0493.pdf",
@@ -1242,7 +1242,7 @@
             "PERCEPTION (100)": "21.28",
             "college_city": "Coimbatore",
             "college_state": "Tamil Nadu",
-            "sorting_1": "46.53",
+            "ranking_score": "46.53",
             "college_rank": "83"
         },
         {
@@ -1251,7 +1251,7 @@
             "GO (100)": "53.60",
             "OI (100)": "69.58",
             "PERCEPTION (100)": "3.49",
-            "sorting_1": "46.39",
+            "ranking_score": "46.39",
             "college_id": "IR-E-U-0739",
             "college_name": "Madan Mohan Malaviya University of Technology",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Engineering/IR-E-U-0739.pdf",
@@ -1272,7 +1272,7 @@
             "PERCEPTION (100)": "17.57",
             "college_city": "New Delhi",
             "college_state": "Delhi",
-            "sorting_1": "46.32",
+            "ranking_score": "46.32",
             "college_rank": "85"
         },
         {
@@ -1281,7 +1281,7 @@
             "GO (100)": "44.86",
             "OI (100)": "69.15",
             "PERCEPTION (100)": "7.10",
-            "sorting_1": "46.23",
+            "ranking_score": "46.23",
             "college_id": "IR-E-U-0489",
             "college_name": "Vel Tech Rangarajan Dr. Sagunthala R & D Institute of Science and Technology",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Engineering/IR-E-U-0489.pdf",
@@ -1302,7 +1302,7 @@
             "PERCEPTION (100)": "27.14",
             "college_city": "Prayagraj",
             "college_state": "Uttar Pradesh",
-            "sorting_1": "45.84",
+            "ranking_score": "45.84",
             "college_rank": "87"
         },
         {
@@ -1311,7 +1311,7 @@
             "GO (100)": "57.00",
             "OI (100)": "56.49",
             "PERCEPTION (100)": "14.15",
-            "sorting_1": "45.78",
+            "ranking_score": "45.78",
             "college_id": "IR-E-U-0017",
             "college_name": "Jawaharlal Nehru Technological University",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Engineering/IR-E-U-0017.pdf",
@@ -1332,7 +1332,7 @@
             "PERCEPTION (100)": "15.43",
             "college_city": "New Delhi",
             "college_state": "Delhi",
-            "sorting_1": "45.64",
+            "ranking_score": "45.64",
             "college_rank": "89"
         },
         {
@@ -1341,7 +1341,7 @@
             "GO (100)": "65.90",
             "OI (100)": "68.52",
             "PERCEPTION (100)": "6.33",
-            "sorting_1": "45.60",
+            "ranking_score": "45.60",
             "college_id": "IR-E-C-24004",
             "college_name": "AU College of Engineering (A)",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Engineering/IR-E-C-24004.pdf",
@@ -1362,7 +1362,7 @@
             "PERCEPTION (100)": "12.49",
             "college_city": "Guntur",
             "college_state": "Andhra Pradesh",
-            "sorting_1": "45.43",
+            "ranking_score": "45.43",
             "college_rank": "91"
         },
         {
@@ -1371,7 +1371,7 @@
             "GO (100)": "45.81",
             "OI (100)": "65.88",
             "PERCEPTION (100)": "4.73",
-            "sorting_1": "45.40",
+            "ranking_score": "45.40",
             "college_id": "IR-E-U-0190",
             "college_name": "Shoolini University of Biotechnology and Management Sciences",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Engineering/IR-E-U-0190.pdf",
@@ -1392,7 +1392,7 @@
             "PERCEPTION (100)": "20.18",
             "college_city": "Bengaluru",
             "college_state": "Karnataka",
-            "sorting_1": "45.02",
+            "ranking_score": "45.02",
             "college_rank": "93"
         },
         {
@@ -1401,7 +1401,7 @@
             "GO (100)": "51.54",
             "OI (100)": "64.91",
             "PERCEPTION (100)": "13.82",
-            "sorting_1": "44.82",
+            "ranking_score": "44.82",
             "college_id": "IR-E-U-0373",
             "college_name": "Chitkara University",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Engineering/IR-E-U-0373.pdf",
@@ -1422,7 +1422,7 @@
             "PERCEPTION (100)": "5.13",
             "college_city": "Bengaluru",
             "college_state": "Karnataka",
-            "sorting_1": "44.61",
+            "ranking_score": "44.61",
             "college_rank": "95"
         },
         {
@@ -1431,7 +1431,7 @@
             "GO (100)": "57.48",
             "OI (100)": "74.22",
             "PERCEPTION (100)": "13.17",
-            "sorting_1": "44.55",
+            "ranking_score": "44.55",
             "college_id": "IR-E-C-30045",
             "college_name": "C.V. Raman Global University, Odisha",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Engineering/IR-E-C-30045.pdf",
@@ -1452,7 +1452,7 @@
             "PERCEPTION (100)": "9.70",
             "college_city": "Karaikal",
             "college_state": "Pondicherry",
-            "sorting_1": "44.38",
+            "ranking_score": "44.38",
             "college_rank": "97"
         },
         {
@@ -1461,7 +1461,7 @@
             "GO (100)": "53.31",
             "OI (100)": "63.59",
             "PERCEPTION (100)": "9.34",
-            "sorting_1": "44.29",
+            "ranking_score": "44.29",
             "college_id": "IR-E-C-19754",
             "college_name": "SR University",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Engineering/IR-E-C-19754.pdf",
@@ -1482,7 +1482,7 @@
             "PERCEPTION (100)": "19.90",
             "college_city": "Bengaluru",
             "college_state": "Karnataka",
-            "sorting_1": "44.26",
+            "ranking_score": "44.26",
             "college_rank": "99"
         },
         {
@@ -1491,7 +1491,7 @@
             "GO (100)": "61.78",
             "OI (100)": "59.80",
             "PERCEPTION (100)": "10.06",
-            "sorting_1": "43.95",
+            "ranking_score": "43.95",
             "college_id": "IR-E-C-1297",
             "college_name": "Siddaganga Institute of Technology",
             "even href": "https://www.nirfindia.org/nirfpdfcdn/2024/pdf/Engineering/IR-E-C-1297.pdf",

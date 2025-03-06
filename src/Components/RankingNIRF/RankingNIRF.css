@@ -1,0 +1,19 @@
+.RankingTable {
+  width: 95%;
+  margin: 10px auto;
+  font-size: 20px;
+  text-decoration: none;
+  border: 1px solid cyan;
+  border-collapse: collapse;
+  font-family: "Roboto";
+}
+.RankingTable td,th {
+  padding: 5px;
+  border: 1px solid cyan;
+}
+.RankingTable th{
+    color: blueviolet;
+}
+.RankingTable a{
+    color: rgb(84, 146, 254);
+}
