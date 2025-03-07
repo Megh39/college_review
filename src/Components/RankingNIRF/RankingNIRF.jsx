@@ -15,58 +15,71 @@ import "./RankingNIRF.css";
 
 const RankingNIRF = () => {
     const jsonFiles = {
+        College_Data: {
+            data: College_Data.College_Ranking,
+            key: "College_Ranking",
+            dataName: "College Ranking"
+        },
+        University_Data: {
+            data: University_Data.University_Ranking,
+            key: "University_Ranking",
+            dataName: "University Ranking"
+        },
         Agriculture_Data: {
             data: Agriculture_Data.Agriculture_Ranking, // Extract the ranking data
             key: "Agriculture_Ranking",
+            dataName: "Agriculture Ranking"
         },
         Architecture_Data: {
             data: Architecture_Data.Architecture_Ranking,
             key: "Architecture_Ranking",
+            dataName: "Architecture Ranking"
         },
-        College_Data: {
-            data: College_Data.College_Ranking,
-            key: "College_Ranking",
-        },
+
         Dental_Data: {
             data: Dental_Data.Dental_Ranking,
             key: "Dental_Ranking",
+            dataName: "Dental Ranking"
         },
         Engineering_Data: {
             data: Engineering_Data.Engineering_Ranking,
             key: "Engineering_Ranking",
+            dataName: "Engineering Ranking"
         },
         Innovation_Data: {
             data: Innovation_Data.Innovation_Ranking,
             key: "Innovation_Ranking",
+            dataName: "Innovation Ranking"
         },
         Law_Data: {
             data: Law_Data.Law_Ranking,
             key: "Law_Ranking",
+            dataName: "Law Ranking"
         },
         Management_Data: {
             data: Management_Data.Management_Ranking,
             key: "Management_Ranking",
+            dataName: "Management Ranking"
         },
         Medical_Data: {
             data: Medical_Data.Medical_Ranking,
             key: "Medical_Ranking",
+            dataName: "Medical Ranking"
         },
         Pharmacy_Data: {
             data: Pharmacy_Data.Pharmacy_Ranking,
             key: "Pharmacy_Ranking",
+            dataName: "Pharmacy Ranking"
         },
         Research_Data: {
             data: Research_Data.Research_Ranking,
             key: "Research_Ranking",
+            dataName: "Research Ranking"
         },
 
-        University_Data: {
-            data: University_Data.University_Ranking,
-            key: "University_Ranking",
-        },
     };
 
-    const [selectedFile, setSelectedFile] = useState("Agriculture_Data");
+    const [selectedFile, setSelectedFile] = useState("College_Data");
     const [data, setData] = useState(jsonFiles[selectedFile].data || []);
 
     const handleChange = (e) => {
@@ -78,18 +91,18 @@ const RankingNIRF = () => {
     return (
         <div>
             <h1>NIRF Rankings</h1>
-
-            <h3>Select Type of Ranking you want to view: </h3>
-            <select onChange={handleChange} value={selectedFile}>
-                {Object.keys(jsonFiles).map((file, index) => (
-                    <option key={index} value={file}>
-                        {file}
-                    </option>
-                ))}
-            </select>
-
+            <div className="selectorContainer">
+                <h3>Select Type of Ranking you want to view: </h3>
+                <select onChange={handleChange} value={selectedFile}>
+                    {Object.keys(jsonFiles).map((file, index) => (
+                        <option key={index} value={file}>
+                            {jsonFiles[file].dataName}  {/* Show the name instead of file key */}
+                        </option>
+                    ))}
+                </select>
+            </div>
             {/* Table Displaying JSON Data */}
-            <table  className="RankingTable">
+            <table className="RankingTable">
                 <thead>
                     <tr>
                         <th>Rank</th>
