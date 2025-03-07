@@ -9,7 +9,9 @@ const Register = () => {
     const [email, setEmail] = useState("");
     const [age, setAge] = useState("");
     const [password, setPassword] = useState("");
+    const [college_name, set_college_name] = useState("");
     const [confirmPassword, setConfirmPassword] = useState("");
+    const [course, setCourse] = useState("");
     const navigate = useNavigate(); // Initialize useNavigate
 
     const handleSubmit = async (e) => {
@@ -20,7 +22,7 @@ const Register = () => {
         }
         try {
             const response = await axios.post("https://college-review-backend.vercel.app/api/auth/register", {
-                username, email, age, password
+                username, email, age, password, college_name,course
             });
             alert("Registration successful");
             navigate("/login");
@@ -56,6 +58,14 @@ const Register = () => {
                     <div className="formGroup">
                         <label for="age">Age</label>
                         <input type="text" id="age" name="age" placeholder="Enter your age" onChange={(e) => setAge(e.target.value)} required />
+                    </div>
+                    <div className="formGroup">
+                        <label for="college_name">College Name</label>
+                        <input type="text" id="college_name" name="college_name" placeholder="Enter your college name" onChange={(e) => set_college_name(e.target.value)} required />
+                    </div>
+                    <div className="formGroup">
+                        <label for="course">Course Name</label>
+                        <input type="text" id="course" name="course" placeholder="Enter your course name" onChange={(e) => setCourse(e.target.value)} required />
                     </div>
                     <button className="registerButton">Register</button>
                 </form>
