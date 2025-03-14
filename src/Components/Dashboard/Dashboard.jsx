@@ -15,7 +15,7 @@ const Dashboard = () => {
                 <h1>WELCOME!</h1>
                 <br />
                 <h3>Site will be updated soon.</h3>
-                {/* <button onClick={handleLogout}>Logout</button> */}
+                <button onClick={handleLogout}>Logout</button>
             </div>
         </>
     )

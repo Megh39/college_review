@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 
 const Review = () => {
-    const [collegeId, setCollegeId] = useState("");
+    const [collegeName, setcollegeName] = useState("");
     const [courseName, setCourseName] = useState("");
     const [rating, setRating] = useState(1);
     const [feedback, setFeedback] = useState("");
@@ -11,7 +11,7 @@ const Review = () => {
     // Get logged-in user ID from localStorage (or another method)
     const user = JSON.parse(localStorage.getItem("user")); // Parse the stored JSON
     const userId = user?.user_id; // Safely access user_id
-    
+
     const handleSubmit = async (e) => {
         e.preventDefault();
 
@@ -23,14 +23,14 @@ const Review = () => {
         try {
             const response = await axios.post("https://college-review-backend.vercel.app/api/auth/submit", {
                 user_id: userId,
-                college_id: collegeId,
+                college_name: collegeName,
                 course_name: courseName,
                 rating,
                 feedback,
             });
 
             setMessage(response.data.message);
-            setCollegeId("");
+            setcollegeName("");
             setCourseName("");
             setRating(1);
             setFeedback("");
@@ -45,8 +45,8 @@ const Review = () => {
             {message && <p>{message}</p>}
             <form onSubmit={handleSubmit}>
                 <div>
-                    <label>College ID:</label>
-                    <input type="text" value={collegeId} onChange={(e) => setCollegeId(e.target.value)} required />
+                    <label>College Name:</label>
+                    <input type="text" value={collegeId} onChange={(e) => setcollegeName(e.target.value)} required />
                 </div>
                 <div>
                     <label>Course Name:</label>
