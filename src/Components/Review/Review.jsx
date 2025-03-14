@@ -9,8 +9,9 @@ const Review = () => {
     const [message, setMessage] = useState("");
 
     // Get logged-in user ID from localStorage (or another method)
-    const userId = localStorage.getItem("user_id");
-
+    const user = JSON.parse(localStorage.getItem("user")); // Parse the stored JSON
+    const userId = user?.user_id; // Safely access user_id
+    
     const handleSubmit = async (e) => {
         e.preventDefault();
 

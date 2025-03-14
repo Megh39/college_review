@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./Login.css";
 import { useNavigate } from "react-router-dom";
-
+import { Link } from "react-router-dom";
 const Login = () => {
     const [usernameOrEmail, setUsernameOrEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -69,6 +69,7 @@ const Login = () => {
                     </div>
                     <button className="registerButton">Login</button>
                 </form>
+                <p className="registerLink">Not a User? <Link to="/Register">Register</Link></p>
             </div>
         </div>
     );
