@@ -46,7 +46,7 @@ const Review = () => {
             <form onSubmit={handleSubmit}>
                 <div>
                     <label>College Name:</label>
-                    <input type="text" value={collegeId} onChange={(e) => setcollegeName(e.target.value)} required />
+                    <input type="text" value={collegeName} onChange={(e) => setcollegeName(e.target.value)} required />
                 </div>
                 <div>
                     <label>Course Name:</label>
