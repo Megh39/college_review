@@ -1,0 +1,46 @@
+.collegeCard {
+  background: black;
+  color: rgba(230, 0, 255, 0.873);
+  padding: 30px 20px;
+  border-radius: 10px;
+}
+
+.mapLink {
+  color: #1d72b8;
+  text-decoration: none;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.expandButton {
+  background-color: #1d72b8;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.expandButton:hover {
+  background-color: #155a8a;
+}
+
+.coursesSection,
+.facilitiesSection {
+  margin-top: 15px;
+}
+
+.facilityImages {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 5px;
+}
+
+.facilityImage {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  object-fit: cover;
+}
