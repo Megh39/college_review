@@ -1,0 +1,115 @@
+/* Container for the whole review page */
+.reviewPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 92vh;
+}
+
+/* Styling the form */
+.reviewForm {
+  background-color: white;
+  padding: 40px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  border-radius: 20px;
+  border: 2px solid #6a0dad;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 500px;
+}
+.reviewForm form {
+  width: 100%;
+}
+/* Form Heading */
+.reviewForm h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Individual Form Groups */
+.reviewFormGroup {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+/* Labels */
+.reviewFormGroup label {
+  margin-bottom: 5px;
+  color: #6a0dad;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Input Fields */
+.reviewForm input,
+.reviewForm textarea {
+  width: 100%;
+  padding: 10px 5px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+/* Container for Rating Radio Buttons */
+.ratingContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  padding: 0 10px;
+}
+
+/* Individual Radio Labels */
+.ratingContainer label {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Textarea for feedback */
+.reviewForm textarea {
+  height: 100px;
+  resize: none;
+}
+
+/* Hover effect for inputs */
+.reviewForm input:focus,
+.reviewForm textarea:focus {
+  border-color: #6a0dad;
+}
+
+/* Submit Button */
+.reviewForm button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #6a0dad;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* Button Hover and Active Effects */
+.reviewForm button:hover {
+  background-color: #4b0082;
+}
+
+.reviewForm button:active {
+  transform: scale(0.98);
+}
+
+/* Message Styling */
+.reviewForm p {
+  margin-top: 10px;
+  color: green;
+  font-weight: bold;
+}

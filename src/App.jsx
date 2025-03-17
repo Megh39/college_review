@@ -10,6 +10,7 @@ import AdminDashboard from "./Components/AdminDashboard/AdminDashboard";
 import { Navigate } from "react-router-dom";
 import RankingNIRF from "./Components/RankingNIRF/RankingNIRF";
 import Review from "./Components/Review/Review";
+import Colleges from "./Components/Colleges/Colleges";
 // ✅ Function to check if user is logged in
 const getUser = () => {
   const user = localStorage.getItem("user");
@@ -39,13 +40,15 @@ const App = () => {
           <Route exact path="/nirfranking" element={<RankingNIRF />} />
           {/* ✅ Protect Dashboard Routes */}
           <Route path="/dashboard" element={<PrivateRoute><Dashboard /></PrivateRoute>} />
-          <Route path="/review" element={<PrivateRoute><Review /></PrivateRoute>} />
+          <Route path="/review" element={<Review />}>Review</Route>
+          <Route path="/colleges" element={<Colleges />} />
+          {/* <Route path="/review" element={<PrivateRoute><Review /></PrivateRoute>} /> */}
           <Route path="/admindashboard" element={<AdminRoute><AdminDashboard /></AdminRoute>} />
           {/* Redirect unknown routes to Home */}
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         <Footer />
-      </Router>
+      </Router >
     </>
   );
 }

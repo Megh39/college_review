@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-
+import "./Review.css"
 const Review = () => {
     const [collegeName, setcollegeName] = useState("");
     const [courseName, setCourseName] = useState("");
@@ -40,35 +40,44 @@ const Review = () => {
     };
 
     return (
-        <div>
-            <h2>Submit a Review</h2>
-            {message && <p>{message}</p>}
-            <form onSubmit={handleSubmit}>
-                <div>
-                    <label>College Name:</label>
-                    <input type="text" value={collegeName} onChange={(e) => setcollegeName(e.target.value)} required />
-                </div>
-                <div>
-                    <label>Course Name:</label>
-                    <input type="text" value={courseName} onChange={(e) => setCourseName(e.target.value)} required />
-                </div>
-                <div>
-                    <label>Rating (1-10):</label>
-                    <input
-                        type="number"
-                        min="1"
-                        max="10"
-                        value={rating}
-                        onChange={(e) => setRating(Number(e.target.value))}
-                        required
-                    />
-                </div>
-                <div>
-                    <label>Feedback:</label>
-                    <textarea value={feedback} onChange={(e) => setFeedback(e.target.value)} required />
-                </div>
-                <button type="submit">Submit Review</button>
-            </form>
+        <div className="reviewPage">
+            <div className="reviewForm">
+                <h2>Submit a Review</h2>
+                {message && <p>{message}</p>}
+                <form onSubmit={handleSubmit}>
+                    <div className="reviewFormGroup">
+                        <label>College Name:</label>
+                        <input type="text" value={collegeName} onChange={(e) => setcollegeName(e.target.value)} required />
+                    </div>
+                    <div className="reviewFormGroup">
+                        <label>Course Name:</label>
+                        <input type="text" value={courseName} onChange={(e) => setCourseName(e.target.value)} required />
+                    </div>
+                    <div className="reviewFormGroup">
+                        <label>Rating (1-10):</label>
+                        <div className="ratingContainer">  {/* Adding ratingContainer here */}
+                            {Array.from({ length: 10 }, (_, index) => (
+                                <label key={index + 1}>
+                                    <input
+                                        type="radio"
+                                        value={index + 1}
+                                        checked={rating === index + 1}
+                                        onChange={(e) => setRating(Number(e.target.value))}
+                                        required
+                                    />
+                                    {index + 1}
+                                </label>
+                            ))}
+                        </div>
+                    </div>
+
+                    <div className="reviewFormGroup">
+                        <label>Feedback:</label>
+                        <textarea value={feedback} onChange={(e) => setFeedback(e.target.value)} required />
+                    </div>
+                    <button type="submit">Submit Review</button>
+                </form>
+            </div>
         </div>
     );
 };
