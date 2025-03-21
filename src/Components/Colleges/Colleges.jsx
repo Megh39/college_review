@@ -34,11 +34,9 @@ const Colleges = () => {
     return (
         <div style={{ padding: '20px' }}>
             <Row gutter={[16, 16]}>
-
                 {colleges.map(college => (
                     <Col xs={24} sm={12} md={8} lg={12} key={college.id}>
-
-                        <div key={college.id} className="collegeCard">
+                        <div className="collegeCard">
                             <h2>{college.name}</h2>
 
                             {college.google_map_link && (
@@ -63,30 +61,41 @@ const Colleges = () => {
                                 <div>
                                     {/* Courses Section */}
                                     <div className="coursesSection">
-                                        <h3>Undergraduate Courses</h3>
-                                        {college.courses?.undergraduate_courses?.map((course, index) => (
-                                            <div key={index}>
-                                                <h4>{course.faculty}</h4>
-                                                <ul>
-                                                    {course.courses.map((courseName, i) => (
-                                                        <li key={i}>{courseName}</li>
-                                                    ))}
-                                                </ul>
-                                            </div>
-                                        ))}
-
-                                        <h3>Postgraduate Courses</h3>
-                                        {college.courses?.postgraduate_courses?.map((course, index) => (
-                                            <div key={index}>
-                                                <h4>{course.faculty}</h4>
-                                                <ul>
-                                                    {course.courses.map((courseName, i) => (
-                                                        <li key={i}>{courseName}</li>
-                                                    ))}
-                                                </ul>
-                                            </div>
-                                        ))}
+                                        <h3>Courses</h3>
+                                        {college.courses?.length > 0 ? (
+                                            college.courses.map((course, index) => (
+                                                <div key={index} className="courseItem">
+                                                    <h4>{course.course_name}</h4>
+                                                    <p><strong>Department:</strong> {course.department || "N/A"}</p>
+                                                    <p><strong>Duration:</strong> {course.course_duration}</p>
+                                                    <p><strong>Level:</strong> {course.course_level}</p>
+                                                    <p><strong>Eligibility:</strong></p>
+                                                    <ul>
+                                                        {Array.isArray(course.eligibility) ? 
+                                                            course.eligibility.map((req, i) => <li key={i}>{req}</li>) : 
+                                                            <li>{course.eligibility}</li>
+                                                        }
+                                                    </ul>
+                                                </div>
+                                            ))
+                                        ) : (
+                                            <p>No courses available.</p>
+                                        )}
                                     </div>
+
+                                    {/* Alumni Section */}
+                                    {college.alumni?.length > 0 && (
+                                        <div className="alumniSection">
+                                            <h3>Alumni</h3>
+                                            <ul>
+                                                {college.alumni.map((alumnus, index) => (
+                                                    <li key={index}>
+                                                        <strong>{alumnus.alumni_name}</strong> - {alumnus.designation}
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        </div>
+                                    )}
 
                                     {/* Facilities Section */}
                                     <div className="facilitiesSection">
@@ -114,17 +123,12 @@ const Colleges = () => {
                                         )}
                                     </div>
                                 </div>
-
                             )}
-
-
                         </div>
                     </Col>
-                ))
-                }
-            </Row >
-        </div >
-
+                ))}
+            </Row>
+        </div>
     );
 };
 

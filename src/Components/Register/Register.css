@@ -10,9 +10,18 @@
   background-color: rgba(9, 143, 176, 0.421);
   overflow: hidden; /* Ensure no unexpected overflow */
 }
+.error {
+  border: 1px solid #ff3333 !important;
+}
 
+.errorMessage {
+  color: #ff3333;
+  font-size: 12px;
+  margin-top: 5px;
+  display: block;
+}
 .registerScreen::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -107,13 +116,13 @@ a {
 a:hover {
   text-decoration: underline;
 }
-@media (max-width:576px){
-  .registerScreen h1{
+@media (max-width: 576px) {
+  .registerScreen h1 {
     font-size: 25px;
     text-align: center;
   }
-  
-  .registerForm{
+
+  .registerForm {
     max-width: 300px;
   }
 }
