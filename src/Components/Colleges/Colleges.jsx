@@ -39,6 +39,19 @@ const Colleges = () => {
                         <div className="collegeCard">
                             <h2>{college.name}</h2>
 
+                            {college.image_url && (
+                                <div className="collegeImage">
+                                    <Image
+                                        src={college.image_url}
+                                        alt={college.name}
+                                        className="collegeImage"
+                                        width={300}
+                                        height={200}
+                                        style={{ marginBottom: '10px' }}
+                                    />
+                                </div>
+                            )}
+
                             {college.google_map_link && (
                                 <a
                                     href={college.google_map_link}
@@ -71,8 +84,8 @@ const Colleges = () => {
                                                     <p><strong>Level:</strong> {course.course_level}</p>
                                                     <p><strong>Eligibility:</strong></p>
                                                     <ul>
-                                                        {Array.isArray(course.eligibility) ? 
-                                                            course.eligibility.map((req, i) => <li key={i}>{req}</li>) : 
+                                                        {Array.isArray(course.eligibility) ?
+                                                            course.eligibility.map((req, i) => <li key={i}>{req}</li>) :
                                                             <li>{course.eligibility}</li>
                                                         }
                                                     </ul>
