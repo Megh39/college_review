@@ -1,8 +1,9 @@
 .collegeCard {
   background: black;
-  color: rgba(230, 0, 255, 0.873);
+  color: rgb(238, 90, 254);
   padding: 30px 20px;
   border-radius: 10px;
+  height: 10vh;
 }
 
 .mapLink {
@@ -26,10 +27,6 @@
   background-color: #155a8a;
 }
 
-.coursesSection,
-.facilitiesSection {
-  margin-top: 15px;
-}
 
 .facilityImages {
   display: flex;
@@ -43,4 +40,8 @@
   height: 100px;
   border-radius: 5px;
   object-fit: cover;
+}
+.loadingBox {
+  height: 100%;
+  width: 100%;
 }

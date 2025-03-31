@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Agriculture_Data from "../../Data/agricultureranking2024.json"; // Direct Import
+import Agriculture_Data from "../../Data/agricultureranking2024.json";
 import Architecture_Data from "../../Data/architectureranking2024.json";
 import College_Data from "../../Data/collegeranking2024.json";
 import Dental_Data from "../../Data/dentalranking2024.json";
@@ -26,7 +26,7 @@ const RankingNIRF = () => {
             dataName: "University Ranking"
         },
         Agriculture_Data: {
-            data: Agriculture_Data.Agriculture_Ranking, // Extract the ranking data
+            data: Agriculture_Data.Agriculture_Ranking,
             key: "Agriculture_Ranking",
             dataName: "Agriculture Ranking"
         },
@@ -35,7 +35,6 @@ const RankingNIRF = () => {
             key: "Architecture_Ranking",
             dataName: "Architecture Ranking"
         },
-
         Dental_Data: {
             data: Dental_Data.Dental_Ranking,
             key: "Dental_Ranking",
@@ -75,18 +74,53 @@ const RankingNIRF = () => {
             data: Research_Data.Research_Ranking,
             key: "Research_Ranking",
             dataName: "Research Ranking"
-        },
-
+        }
     };
 
     const [selectedFile, setSelectedFile] = useState("College_Data");
     const [data, setData] = useState(jsonFiles[selectedFile].data || []);
+    const [sortConfig, setSortConfig] = useState({ key: null, direction: "asc" });
+    const [filters, setFilters] = useState({});
 
     const handleChange = (e) => {
         const newSelection = e.target.value;
         setSelectedFile(newSelection);
         setData(jsonFiles[newSelection].data || []);
+        setFilters({});
+        setSortConfig({ key: null, direction: "asc" });
     };
+    const clearFilters = () => {
+        setFilters({});
+    };
+    // Sorting function
+    const handleSort = (key) => {
+        let direction = "asc";
+        if (sortConfig.key === key && sortConfig.direction === "asc") {
+            direction = "desc";
+        }
+        const sortedData = [...data].sort((a, b) => {
+            if (a[key] < b[key]) return direction === "asc" ? -1 : 1;
+            if (a[key] > b[key]) return direction === "asc" ? 1 : -1;
+            return 0;
+        });
+        setData(sortedData);
+        setSortConfig({ key, direction });
+    };
+
+    // Filtering function
+    const handleFilterChange = (e, key) => {
+        const value = e.target.value.toLowerCase();
+        setFilters((prevFilters) => ({
+            ...prevFilters,
+            [key]: value
+        }));
+    };
+
+    const filteredData = data.filter((college) =>
+        Object.keys(filters).every((key) =>
+            college[key]?.toString().toLowerCase().includes(filters[key])
+        )
+    );
 
     return (
         <div>
@@ -96,31 +130,42 @@ const RankingNIRF = () => {
                 <select onChange={handleChange} value={selectedFile}>
                     {Object.keys(jsonFiles).map((file, index) => (
                         <option key={index} value={file}>
-                            {jsonFiles[file].dataName}  {/* Show the name instead of file key */}
+                            {jsonFiles[file].dataName}
                         </option>
                     ))}
                 </select>
             </div>
+
+            {/* Filtering Inputs */}
+            <div className="filterContainer">
+                <input type="text" placeholder="Filter Rank" onChange={(e) => handleFilterChange(e, "college_rank")} />
+                {/* <input type="text" placeholder="Filter ID" onChange={(e) => handleFilterChange(e, "college_id")} /> */}
+                <input type="text" placeholder="Filter College Name" onChange={(e) => handleFilterChange(e, "college_name")} />
+                <input type="text" placeholder="Filter City" onChange={(e) => handleFilterChange(e, "college_city")} />
+                <input type="text" placeholder="Filter State" onChange={(e) => handleFilterChange(e, "college_state")} />
+                <input type="text" placeholder="Filter Ranking Score" onChange={(e) => handleFilterChange(e, "ranking_score")} />
+                <button onClick={clearFilters}>Clear Filters</button>
+
+            </div>
+
             {/* Table Displaying JSON Data */}
             <table className="RankingTable">
                 <thead>
                     <tr>
-                        <th>Rank</th>
-                        <th>ID</th>
-
-                        <th>College Name</th>
-                        <th>City</th>
-                        <th>State</th>
-                        <th>Ranking Score</th>
+                        <th onClick={() => handleSort("college_rank")}>Rank</th>
+                        <th onClick={() => handleSort("college_id")}>ID</th>
+                        <th onClick={() => handleSort("college_name")}>College Name</th>
+                        <th onClick={() => handleSort("college_city")}>City</th>
+                        <th onClick={() => handleSort("college_state")}>State</th>
+                        <th onClick={() => handleSort("ranking_score")}>Ranking Score</th>
                         <th>Details</th>
                     </tr>
                 </thead>
                 <tbody>
-                    {data.length > 0 ? (
-                        data.map((college, index) => (
+                    {filteredData.length > 0 ? (
+                        filteredData.map((college, index) => (
                             <tr key={index}>
                                 <td>{college.college_rank}</td>
-
                                 <td>{college.college_id}</td>
                                 <td>{college.college_name}</td>
                                 <td>{college.college_city}</td>
@@ -135,7 +180,7 @@ const RankingNIRF = () => {
                         ))
                     ) : (
                         <tr>
-                            <td colSpan="6">No Data Available</td>
+                            <td colSpan="7">No Data Available</td>
                         </tr>
                     )}
                 </tbody>

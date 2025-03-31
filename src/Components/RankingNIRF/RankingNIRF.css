@@ -33,3 +33,14 @@ th {
   color: cyan;
   border: 1px solid blueviolet;
 }
+.filterContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+  margin: 10px auto;
+}
+.filterContainer input {
+  padding: 5px 10px;
+  font-size: 14px;
+}

@@ -11,6 +11,7 @@ import { Navigate } from "react-router-dom";
 import RankingNIRF from "./Components/RankingNIRF/RankingNIRF";
 import Review from "./Components/Review/Review";
 import Colleges from "./Components/Colleges/Colleges";
+import CollegeDetails from "./Components/CollegeDetails/CollegeDetails";
 // ✅ Function to check if user is logged in
 const getUser = () => {
   const user = localStorage.getItem("user");
@@ -42,6 +43,8 @@ const App = () => {
           <Route path="/dashboard" element={<PrivateRoute><Dashboard /></PrivateRoute>} />
           <Route path="/review" element={<Review />}>Review</Route>
           <Route path="/colleges" element={<Colleges />} />
+          <Route path="/college/:id" element={<CollegeDetails />} />
+
           {/* <Route path="/review" element={<PrivateRoute><Review /></PrivateRoute>} /> */}
           <Route path="/admindashboard" element={<AdminRoute><AdminDashboard /></AdminRoute>} />
           {/* Redirect unknown routes to Home */}
