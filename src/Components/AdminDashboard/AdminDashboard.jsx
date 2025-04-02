@@ -107,22 +107,23 @@ const AdminDashboard = () => {
             alert(err.response?.data?.message || "Error updating review.");
         }
     };
-    const handleApproveReview = async (reviewId, currentStatus) => {
+    const handleApproveReview = async (reviewId, currentApprovalStatus) => {
         try {
-            const response = await axios.put(
-                `https://college-review-backend.vercel.app/api/auth/reviews/approve/${reviewId}`,
-                { approved: !currentStatus }
-            );
-
-            setReviews(reviews.map(r =>
-                r.review_id === reviewId ? { ...r, approved: !currentStatus } : r
+            const response = await axios.put(`https://college-review-backend.vercel.app/api/auth/reviews/${reviewId}`, {
+                approved: !currentApprovalStatus,  // Toggle approval status
+            });
+    
+            setReviews(reviews.map(review =>
+                review.review_id === reviewId ? { ...review, approved: !currentApprovalStatus } : review
             ));
-
+    
             alert("Review approval status updated!");
         } catch (err) {
-            alert(err.response?.data?.message || "Error updating review approval.");
+            console.error("Error updating approval status:", err);
+            alert(err.response?.data?.message || "Failed to update review approval.");
         }
     };
+    
 
     const handleDeleteReview = async (reviewId) => {
         if (!reviewId) {
