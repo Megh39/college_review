@@ -12,6 +12,7 @@ import RankingNIRF from "./Components/RankingNIRF/RankingNIRF";
 import Review from "./Components/Review/Review";
 import Colleges from "./Components/Colleges/Colleges";
 import CollegeDetails from "./Components/CollegeDetails/CollegeDetails";
+import Reviews from "./Components/Reviews/Reviews";
 // ✅ Function to check if user is logged in
 const getUser = () => {
   const user = localStorage.getItem("user");
@@ -42,6 +43,7 @@ const App = () => {
           {/* ✅ Protect Dashboard Routes */}
           <Route path="/dashboard" element={<PrivateRoute><Dashboard /></PrivateRoute>} />
           <Route path="/review" element={<Review />}>Review</Route>
+          <Route path="/reviews" element={<Reviews/>}>Reviews</Route>
           <Route path="/colleges" element={<Colleges />} />
           <Route path="/college/:id" element={<CollegeDetails />} />
 

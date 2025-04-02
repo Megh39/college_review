@@ -11,6 +11,7 @@ const AdminDashboard = () => {
     const [editReview, setEditReview] = useState(null);
     const [newUser, setNewUser] = useState({ username: "", email: "", password: "", age: "", college_name: "", course: "" });
     const [newReview, setNewReview] = useState({ user_id: "", college_name: "", course_name: "", rating: 1, feedback: "" });
+    const [showModal, setShowModal] = useState(false);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -32,13 +33,13 @@ const AdminDashboard = () => {
             alert("All fields are required!");
             return;
         }
-    
+
         try {
             const response = await axios.post("https://college-review-backend.vercel.app/api/auth/users", {
                 ...newUser,
                 age: Number(newUser.age),
             });
-    
+
             setUsers([...users, response.data.user]);
             setNewUser({ username: "", email: "", password: "", age: "", college_name: "", course: "" });
             alert("User added successfully!");
@@ -46,7 +47,7 @@ const AdminDashboard = () => {
             alert(err.response?.data?.message || "Error adding user.");
         }
     };
-    
+
     // Update User
     const handleUpdateUser = async () => {
         try {
@@ -72,55 +73,74 @@ const AdminDashboard = () => {
             }
         }
     };
-    const handleAddReview = async () => {
-        if (!newReview.user_id || !newReview.college_name || !newReview.course_name || !newReview.rating || !newReview.feedback) {
-            alert("All fields are required!");
-            return;
-        }
+    // const handleAddReview = async () => {
+    //     if (!newReview.user_id || !newReview.college_name || !newReview.course_name || !newReview.rating || !newReview.feedback) {
+    //         alert("All fields are required!");
+    //         return;
+    //     }
 
-        try {
-            const response = await axios.post("https://college-review-backend.vercel.app/api/auth/reviews", {
-                ...newReview,
-                user_id: Number(newReview.user_id),
-                rating: Number(newReview.rating),
-            });
+    //     try {
+    //         const response = await axios.post("https://college-review-backend.vercel.app/api/auth/submit", {
+    //             ...newReview,
+    //             user_id: Number(newReview.user_id),
+    //             rating: Number(newReview.rating),
+    //         });
 
-            setReviews([...reviews, response.data.review]);
-            setNewReview({ user_id: "", college_name: "", course_name: "", rating: 1, feedback: "" });
-            alert("Review added successfully!");
-        } catch (err) {
-            alert(err.response?.data?.message || "Error adding review.");
-        }
-    };
+    //         setReviews([...reviews, response.data.review]);
+    //         setNewReview({ user_id: "", college_name: "", course_name: "", rating: 1, feedback: "" });
+    //         alert("Review added successfully!");
+    //     } catch (err) {
+    //         alert(err.response?.data?.message || "Error adding review.");
+    //     }
+    // };
 
-
-    // Update Review
     const handleUpdateReview = async () => {
         try {
-            const response = await axios.put(`https://college-review-backend.vercel.app/api/auth/reviews/${editReview._id}`, editReview);
-            setReviews(reviews.map(r => r._id === editReview._id ? response.data.review : r));
+            const response = await axios.put(
+                `https://college-review-backend.vercel.app/api/auth/reviews/${editReview.review_id}`,
+                editReview
+            );
+            setReviews(reviews.map(r => r.review_id === editReview.review_id ? response.data.review : r));
             setEditReview(null);
             alert("Review updated successfully!");
         } catch (err) {
             alert(err.response?.data?.message || "Error updating review.");
         }
     };
-    const handleDeleteReview = async (id) => {
-        if (!id) {
+    const handleApproveReview = async (reviewId, currentStatus) => {
+        try {
+            const response = await axios.put(
+                `https://college-review-backend.vercel.app/api/auth/reviews/approve/${reviewId}`,
+                { approved: !currentStatus }
+            );
+
+            setReviews(reviews.map(r =>
+                r.review_id === reviewId ? { ...r, approved: !currentStatus } : r
+            ));
+
+            alert("Review approval status updated!");
+        } catch (err) {
+            alert(err.response?.data?.message || "Error updating review approval.");
+        }
+    };
+
+    const handleDeleteReview = async (reviewId) => {
+        if (!reviewId) {
             alert("Invalid review ID.");
             return;
         }
 
         if (window.confirm("Are you sure you want to delete this review?")) {
             try {
-                await axios.delete(`https://college-review-backend.vercel.app/api/auth/reviews/${id}`);
-                setReviews(reviews.filter(r => r._id !== id));
+                await axios.delete(`https://college-review-backend.vercel.app/api/auth/reviews/${reviewId}`);
+                setReviews(reviews.filter(r => r.review_id !== reviewId)); // Filter by `review_id`
                 alert("Review deleted successfully!");
             } catch (err) {
                 alert(err.response?.data?.message || "Error deleting review.");
             }
         }
     };
+
 
 
     if (loading) return <div className="adminDashboardPage"><h1>Loading...</h1></div>;
@@ -134,9 +154,10 @@ const AdminDashboard = () => {
             {/* Users Section */}
             <section className="dashboardSection">
                 <h2>Users</h2>
-                <button onClick={() => setNewUser({ username: "", email: "", password: "", age: "", college_name: "", course: "" })}>
-                    Add New User
-                </button>
+
+
+
+
                 <div className="userTableContainer">
                     <table className="userTable">
                         <thead>
@@ -158,16 +179,33 @@ const AdminDashboard = () => {
                                     <td>{user.college_name}</td>
                                     <td>{user.course}</td>
                                     <td>
-                                        <button onClick={() => setEditUser(user)}>Edit</button>
-                                        <button onClick={() => handleDeleteUser(user.user_id)}>Delete</button>
+                                        <button onClick={() => {
+                                            setEditUser(user); // Make sure modal opens
+                                            setShowModal(true);
+                                        }}>Edit</button>                                        <button onClick={() => handleDeleteUser(user.user_id)}>Delete</button>
                                     </td>
                                 </tr>
                             ))}
                         </tbody>
                     </table>
                 </div>
-
-                {(editUser || newUser.username !== "") && (
+                <button
+                    className="addnewuserbutton"
+                    onClick={() => {
+                        setNewUser({
+                            username: "",
+                            email: "",
+                            password: "",
+                            age: "",
+                            college_name: "",
+                            course: ""
+                        });
+                        setShowModal(true);  // Ensure modal opens
+                    }}
+                >
+                    Add New User
+                </button>
+                {showModal && (
                     <div className="modal">
                         <h3>{editUser ? "Edit User" : "Add User"}</h3>
 
@@ -236,19 +274,22 @@ const AdminDashboard = () => {
                         <button onClick={editUser ? handleUpdateUser : handleAddUser}>
                             {editUser ? "Update" : "Add"}
                         </button>
+                        <button onClick={() => setShowModal(false)}>Cancel</button>
 
-                        <button onClick={() => (editUser ? setEditUser(null) : setNewUser({ username: "", email: "", password: "", age: "", college_name: "", course: "" }))}>
-                            Cancel
-                        </button>
                     </div>
                 )}
+
 
             </section>
 
             {/* Reviews Section */}
             <section className="dashboardSection">
                 <h2>Reviews</h2>
-                <button onClick={() => setEditReview({})}>Add New Review</button>
+                {/* <button onClick={() => setEditReview({
+                    user_id: "", username: "", college_name: "", course_name: "", rating: 1, feedback: ""
+                })}>
+                    Add New Review
+                </button> */}
                 <div className="userTableContainer">
                     <table className="userTable">
                         <thead>
@@ -272,25 +313,29 @@ const AdminDashboard = () => {
                                     <td>{review.rating}</td>
                                     <td>{review.feedback}</td>
                                     <td>
-                                        <button onClick={() => setEditReview(review)}>Edit</button>
-                                        <button onClick={() => handleDeleteReview(review._id)}>Delete</button>
+                                        <button onClick={() => handleApproveReview(review.review_id, review.approved)}>
+                                            {review.approved ? "Disapprove" : "Approve"}
+                                        </button>
+                                        <button onClick={() => handleDeleteReview(review.review_id)}>Delete</button>
                                     </td>
                                 </tr>
                             ))}
                         </tbody>
+
                     </table>
                 </div>
 
                 {/* Review Modal */}
                 {editReview && (
                     <div className="modal">
-                        <h3>{editReview._id ? "Edit Review" : "Add Review"}</h3>
+                        <h3>{editReview.review_id ? "Edit Review" : "Add Review"}</h3>
                         <input value={editReview.user_id || ""} onChange={(e) => setEditReview({ ...editReview, user_id: Number(e.target.value) })} placeholder="User ID" type="number" />
+
                         <input value={editReview.college_name || ""} onChange={(e) => setEditReview({ ...editReview, college_name: e.target.value })} placeholder="College Name" />
                         <input value={editReview.course_name || ""} onChange={(e) => setEditReview({ ...editReview, course_name: e.target.value })} placeholder="Course Name" />
                         <input value={editReview.rating || ""} onChange={(e) => setEditReview({ ...editReview, rating: Number(e.target.value) })} placeholder="Rating (1-10)" type="number" min="1" max="10" />
                         <input value={editReview.feedback || ""} onChange={(e) => setEditReview({ ...editReview, feedback: e.target.value })} placeholder="Feedback" />
-                        <button onClick={editReview._id ? handleUpdateReview : handleAddReview}>{editReview._id ? "Update" : "Add"}</button>
+                        <button onClick={editReview._id ? handleUpdateReview : handleAddReview}>{editReview.review_id ? "Update" : "Add"}</button>
                         <button onClick={() => setEditReview(null)}>Cancel</button>
                     </div>
                 )}
