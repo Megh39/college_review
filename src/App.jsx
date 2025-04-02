@@ -40,16 +40,11 @@ const App = () => {
           <Route exact path="/" element={<Home />} />
           <Route exact path="/login" element={<Login />} />
           <Route exact path="/nirfranking" element={<RankingNIRF />} />
-          {/* ✅ Protect Dashboard Routes */}
-          <Route path="/dashboard" element={<PrivateRoute><Dashboard /></PrivateRoute>} />
-          <Route path="/review" element={<Review />}>Review</Route>
-          <Route path="/reviews" element={<Reviews/>}>Reviews</Route>
-          <Route path="/colleges" element={<Colleges />} />
-          <Route path="/college/:id" element={<CollegeDetails />} />
-
-          {/* <Route path="/review" element={<PrivateRoute><Review /></PrivateRoute>} /> */}
+          <Route path="/review" element={<PrivateRoute><Review /></PrivateRoute>} />
+          <Route path="/reviews" element={<PrivateRoute><Reviews /></PrivateRoute>} />
+          <Route path="/college/:id" element={<PrivateRoute><CollegeDetails /></PrivateRoute>} />
+          <Route path="/colleges" element={<PrivateRoute><Colleges /></PrivateRoute>} />
           <Route path="/admindashboard" element={<AdminRoute><AdminDashboard /></AdminRoute>} />
-          {/* Redirect unknown routes to Home */}
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         <Footer />
