@@ -56,7 +56,8 @@ const AdminDashboard = () => {
     const handleDeleteUser = async (user_id) => {
         if (window.confirm("Are you sure you want to delete this user?")) {
             try {
-                await axios.delete(`https://college-review-backend.vercel.app/api/auth/users/${user_id}`);
+                await axios.delete(`https://college-review-backend.vercel.app/api/auth/users/${Number(user_id)}`);
+
                 setUsers(users.filter(u => u.user_id !== user_id));
                 alert("User deleted successfully!");
             } catch (err) {
