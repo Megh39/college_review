@@ -28,10 +28,18 @@ const AdminDashboard = () => {
         fetchData();
     }, []);
 
-    // Add User
     const handleAddUser = async () => {
+        if (!newUser.username || !newUser.email || !newUser.password || !newUser.age || !newUser.college_name || !newUser.course) {
+            alert("All fields are required!");
+            return;
+        }
+    
         try {
-            const response = await axios.post("https://college-review-backend.vercel.app/api/auth/users", newUser);
+            const response = await axios.post("https://college-review-backend.vercel.app/api/auth/users", {
+                ...newUser,
+                age: Number(newUser.age), // Ensure age is a number
+            });
+    
             setUsers([...users, response.data.user]);
             setNewUser({ username: "", email: "", password: "", age: "", college_name: "", course: "" });
             alert("User added successfully!");
@@ -39,7 +47,6 @@ const AdminDashboard = () => {
             alert(err.response?.data?.message || "Error adding user.");
         }
     };
-
     // Update User
     const handleUpdateUser = async () => {
         try {
@@ -65,11 +72,19 @@ const AdminDashboard = () => {
             }
         }
     };
-
-    // Add Review
     const handleAddReview = async () => {
+        if (!newReview.user_id || !newReview.college_name || !newReview.course_name || !newReview.rating || !newReview.feedback) {
+            alert("All fields are required!");
+            return;
+        }
+    
         try {
-            const response = await axios.post("https://college-review-backend.vercel.app/api/auth/reviews", newReview);
+            const response = await axios.post("https://college-review-backend.vercel.app/api/auth/reviews", {
+                ...newReview,
+                user_id: Number(newReview.user_id),
+                rating: Number(newReview.rating),
+            });
+    
             setReviews([...reviews, response.data.review]);
             setNewReview({ user_id: "", college_name: "", course_name: "", rating: 1, feedback: "" });
             alert("Review added successfully!");
@@ -77,6 +92,7 @@ const AdminDashboard = () => {
             alert(err.response?.data?.message || "Error adding review.");
         }
     };
+    
 
     // Update Review
     const handleUpdateReview = async () => {
@@ -89,9 +105,12 @@ const AdminDashboard = () => {
             alert(err.response?.data?.message || "Error updating review.");
         }
     };
-
-    // Delete Review
     const handleDeleteReview = async (id) => {
+        if (!id) {
+            alert("Invalid review ID.");
+            return;
+        }
+    
         if (window.confirm("Are you sure you want to delete this review?")) {
             try {
                 await axios.delete(`https://college-review-backend.vercel.app/api/auth/reviews/${id}`);
@@ -102,6 +121,7 @@ const AdminDashboard = () => {
             }
         }
     };
+    
 
     if (loading) return <div className="adminDashboardPage"><h1>Loading...</h1></div>;
     if (error) return <div className="adminDashboardPage"><h1>Error</h1><p>{error}</p></div>;
