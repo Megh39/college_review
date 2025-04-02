@@ -112,18 +112,18 @@ const AdminDashboard = () => {
             const response = await axios.put(`https://college-review-backend.vercel.app/api/auth/reviews/${reviewId}`, {
                 approved: !currentApprovalStatus,  // Toggle approval status
             });
-    
+
             setReviews(reviews.map(review =>
                 review.review_id === reviewId ? { ...review, approved: !currentApprovalStatus } : review
             ));
-    
+
             alert("Review approval status updated!");
         } catch (err) {
             console.error("Error updating approval status:", err);
             alert(err.response?.data?.message || "Failed to update review approval.");
         }
     };
-    
+
 
     const handleDeleteReview = async (reviewId) => {
         if (!reviewId) {
@@ -168,6 +168,7 @@ const AdminDashboard = () => {
                                 <th>Age</th>
                                 <th>College</th>
                                 <th>Course</th>
+                                <th>Password</th>
                                 <th>Actions</th>
                             </tr>
                         </thead>
@@ -179,6 +180,7 @@ const AdminDashboard = () => {
                                     <td>{user.age}</td>
                                     <td>{user.college_name}</td>
                                     <td>{user.course}</td>
+                                    <td>{user.password}</td>
                                     <td>
                                         <button onClick={() => {
                                             setEditUser(user); // Make sure modal opens
