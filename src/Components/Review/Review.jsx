@@ -11,7 +11,7 @@ const Review = () => {
     // Get logged-in user ID from localStorage (or another method)
     const user = JSON.parse(localStorage.getItem("user")); // Parse the stored JSON
     const userId = user?.user_id; // Safely access user_id
-
+    const userName=user?.username;
     const handleSubmit = async (e) => {
         e.preventDefault();
 
@@ -23,6 +23,7 @@ const Review = () => {
         try {
             const response = await axios.post("https://college-review-backend.vercel.app/api/auth/submit", {
                 user_id: userId,
+                username:userName,
                 college_name: collegeName,
                 course_name: courseName,
                 rating,

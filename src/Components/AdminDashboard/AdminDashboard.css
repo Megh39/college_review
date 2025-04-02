@@ -1,6 +1,47 @@
-.adminDashboardPage{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.adminDashboardPage {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.adminDashboardPage h1 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.adminDashboardPage h3 {
+  color: #666;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.userTableContainer {
+  overflow-x: auto; /* For responsiveness on small screens */
+}
+
+.userTable {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.userTable th,
+.userTable td {
+  padding: 12px 15px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.userTable th {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+
+
+.userTable tr:hover {
+  background-color: black;
+  transition: background-color 0.3s ease;
 }
