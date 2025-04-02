@@ -63,7 +63,7 @@
 }
 .courseItem .ant-card-body h4 {
   text-align: center !important;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
 }
 .courseItem .ant-card-body p,
 li,
@@ -75,6 +75,7 @@ ul {
   border-color: #40c4ff;
   box-shadow: 0 4px 12px rgba(0, 255, 255, 0.2);
   border-radius: 0px;
+  padding: 30px 20px;
 }
 
 .eligibility-list {
@@ -96,11 +97,14 @@ ul {
 .alumni-item {
   padding: 12px;
   border-bottom: 1px solid #f0f0f0;
-  transition: background 0.3s ease;
+  transition: 0.3s;
 }
 
 .alumni-item:hover {
-  background: #fafafa;
+  background-color: grey;
+  color: black;
+  transition: 0.3s;
+  padding: 20px 12px;
 }
 
 .facilitiesSection h3 {
@@ -118,6 +122,8 @@ ul {
 
 .facilityItem:hover {
   transform: translateY(-4px);
+  transition: 0.3s;
+  border: 1px solid cyan;
 }
 
 .facilityItem h4 {

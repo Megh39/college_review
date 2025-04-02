@@ -3,14 +3,12 @@
   color: rgb(238, 90, 254);
   padding: 30px 20px;
   border-radius: 10px;
-  height: 10vh;
+  height: 15vh;
 }
 
 .mapLink {
   color: #1d72b8;
-  text-decoration: none;
   margin-bottom: 10px;
-  display: block;
 }
 
 .expandButton {
@@ -26,7 +24,6 @@
 .expandButton:hover {
   background-color: #155a8a;
 }
-
 
 .facilityImages {
   display: flex;
@@ -44,4 +41,13 @@
 .loadingBox {
   height: 100%;
   width: 100%;
+}
+.viewDetailsButton {
+  border: 1px solid cyan;
+  padding:7px 10px ;
+  transition: 0.3s;
+}
+.viewDetailsButton:hover{
+  padding: 10px 10px;
+  transition: 0.3s;
 }

@@ -50,8 +50,8 @@ const Colleges = () => {
 
         // Apply Sorting AFTER Filtering
         filtered = [...filtered].sort((a, b) =>
-            sortOrder === "asc" ? (a.name || "").localeCompare(b.name || "") 
-                                : (b.name || "").localeCompare(a.name || "")
+            sortOrder === "asc" ? (a.name || "").localeCompare(b.name || "")
+                : (b.name || "").localeCompare(a.name || "")
         );
 
         setFilteredColleges(filtered);
@@ -89,7 +89,7 @@ const Colleges = () => {
                         <div className="collegeCard">
                             <h2>{college.name}</h2>
 
-                            {college.google_map_link && (
+                            <br />                            {college.google_map_link && (
                                 <a
                                     href={college.google_map_link}
                                     target="_blank"
@@ -98,11 +98,10 @@ const Colleges = () => {
                                 >
                                     View on Google Maps
                                 </a>
-                            )}
-
-                            <Link to={`/college/${college.id}`} className="viewDetailsButton">
+                            )} <br /><br /><Link to={`/college/${college.id}`} className="viewDetailsButton">
                                 View Details
                             </Link>
+
                         </div>
                     </Col>
                 ))}

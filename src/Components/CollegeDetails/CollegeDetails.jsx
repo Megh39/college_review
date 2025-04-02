@@ -79,13 +79,13 @@ const CollegeDetails = () => {
                                 <Card className="courseItem" hoverable>
                                     <h4>{course.course_name}</h4>
                                     <p><strong>Department:</strong> {course.department || "N/A"}</p>
-                                    <p><strong>Duration:</strong> {course.course_duration}</p>
-                                    <p><strong>Level:</strong> {course.course_level}</p>
+                                    <p><strong>Duration:</strong> {course.course_duration || "N/A"}</p>
+                                    <p><strong>Level:</strong> {course.course_level || "N/A"}</p>
                                     <p><strong>Eligibility:</strong></p>
                                     <ul className="eligibility-list">
                                         {Array.isArray(course.eligibility) ?
                                             course.eligibility.map((req, i) => <li key={i}>{req}</li>) :
-                                            <li>{course.eligibility}</li>
+                                            <li>{course.eligibility || "N/A"}</li>
                                         }
                                     </ul>
                                 </Card>
