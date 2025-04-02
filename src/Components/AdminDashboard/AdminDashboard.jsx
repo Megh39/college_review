@@ -44,8 +44,7 @@ const AdminDashboard = () => {
     const handleUpdateUser = async () => {
         try {
             const response = await axios.put(`https://college-review-backend.vercel.app/api/auth/users/${editUser._id}`, editUser);
-            setUsers(users.map(u => u._id === editUser._id ? response.data.user : u));
-            setEditUser(null);
+            setUsers(users.map(u => u.user_id === editUser.user_id ? response.data.user : u)); setEditUser(null);
             alert("User updated successfully!");
         } catch (err) {
             alert(err.response?.data?.message || "Error updating user.");
@@ -57,8 +56,7 @@ const AdminDashboard = () => {
         if (window.confirm("Are you sure you want to delete this user?")) {
             try {
                 await axios.delete(`https://college-review-backend.vercel.app/api/auth/users/${id}`);
-                setUsers(users.filter(u => u._id !== id));
-                alert("User deleted successfully!");
+                setUsers(users.filter(u => u.user_id !== user_id));                 alert("User deleted successfully!");
             } catch (err) {
                 alert(err.response?.data?.message || "Error deleting user.");
             }
