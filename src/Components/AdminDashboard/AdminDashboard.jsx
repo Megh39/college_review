@@ -43,8 +43,9 @@ const AdminDashboard = () => {
     // Update User
     const handleUpdateUser = async () => {
         try {
-            const response = await axios.put(`https://college-review-backend.vercel.app/api/auth/users/${editUser._id}`, editUser);
-            setUsers(users.map(u => u.user_id === editUser.user_id ? response.data.user : u)); setEditUser(null);
+            const response = await axios.put(`https://college-review-backend.vercel.app/api/auth/users/${editUser.user_id}`, editUser);
+            setUsers(users.map(u => u.user_id === editUser.user_id ? response.data.user : u));
+            setEditUser(null);
             alert("User updated successfully!");
         } catch (err) {
             alert(err.response?.data?.message || "Error updating user.");
@@ -52,11 +53,12 @@ const AdminDashboard = () => {
     };
 
     // Delete User
-    const handleDeleteUser = async (id) => {
+    const handleDeleteUser = async (user_id) => {
         if (window.confirm("Are you sure you want to delete this user?")) {
             try {
-                await axios.delete(`https://college-review-backend.vercel.app/api/auth/users/${id}`);
-                setUsers(users.filter(u => u.user_id !== user_id));                 alert("User deleted successfully!");
+                await axios.delete(`https://college-review-backend.vercel.app/api/auth/users/${user_id}`);
+                setUsers(users.filter(u => u.user_id !== user_id));
+                alert("User deleted successfully!");
             } catch (err) {
                 alert(err.response?.data?.message || "Error deleting user.");
             }
@@ -134,7 +136,7 @@ const AdminDashboard = () => {
                                     <td>{user.course}</td>
                                     <td>
                                         <button onClick={() => setEditUser(user)}>Edit</button>
-                                        <button onClick={() => handleDeleteUser(user._id)}>Delete</button>
+                                        <button onClick={() => handleDeleteUser(user.user_id)}>Delete</button>
                                     </td>
                                 </tr>
                             ))}
@@ -145,14 +147,14 @@ const AdminDashboard = () => {
                 {/* User Modal */}
                 {editUser && (
                     <div className="modal">
-                        <h3>{editUser._id ? "Edit User" : "Add User"}</h3>
+                        <h3>{editUser.user_id ? "Edit User" : "Add User"}</h3>
                         <input value={editUser.username || ""} onChange={(e) => setEditUser({ ...editUser, username: e.target.value })} placeholder="Username" />
                         <input value={editUser.email || ""} onChange={(e) => setEditUser({ ...editUser, email: e.target.value })} placeholder="Email" />
                         <input value={editUser.password || ""} onChange={(e) => setEditUser({ ...editUser, password: e.target.value })} placeholder="Password" type="password" />
                         <input value={editUser.age || ""} onChange={(e) => setEditUser({ ...editUser, age: Number(e.target.value) })} placeholder="Age" type="number" />
                         <input value={editUser.college_name || ""} onChange={(e) => setEditUser({ ...editUser, college_name: e.target.value })} placeholder="College Name" />
                         <input value={editUser.course || ""} onChange={(e) => setEditUser({ ...editUser, course: e.target.value })} placeholder="Course" />
-                        <button onClick={editUser._id ? handleUpdateUser : handleAddUser}>{editUser._id ? "Update" : "Add"}</button>
+                        <button onClick={editUser.user_id ? handleUpdateUser : handleAddUser}>{editUser.user_id ? "Update" : "Add"}</button>
                         <button onClick={() => setEditUser(null)}>Cancel</button>
                     </div>
                 )}
