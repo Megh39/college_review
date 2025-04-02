@@ -17,7 +17,7 @@ const Navigation = () => {
                 <Link to="/nirfranking">NIRF Rankings</Link>
                 <Link to="/colleges">Colleges</Link>
                 <Link to="/review">Write a Review</Link>
-                <Link to="#" onClick={handleLogout} >
+                <Link to="/register" onClick={handleLogout} >
                     Logout
                 </Link>
             </div>
