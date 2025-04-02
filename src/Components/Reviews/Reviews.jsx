@@ -38,7 +38,7 @@ const Reviews = () => {
                             <p><strong>Course:</strong> {review.course_name}</p>
                             <p><strong>User:</strong> {review.username}</p>
                             <p><strong>Feedback:</strong> {review.feedback}</p>
-                            <Rate disabled defaultValue={review.rating} />
+                            <Rate disabled defaultValue={review.rating} count={10}/>
                         </Card>
                     </List.Item>
                 )}
