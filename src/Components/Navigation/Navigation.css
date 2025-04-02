@@ -10,19 +10,14 @@
   justify-content: space-between;
 }
 .navLinks a {
-  padding:15px 20px;
+  padding: 15px 20px;
   font-size: 20px;
   color: white;
   transition: 0.2s;
 }
+
 .navLinks a:hover {
   color: blueviolet;
   text-decoration: underline;
   transition: 0.3s;
-}
-@media (max-width:576px){
-  .navLinks a{
-    padding:  20px;
-    font-size: 18px;
-  }
 }
