@@ -27,7 +27,6 @@ const AdminDashboard = () => {
         };
         fetchData();
     }, []);
-
     const handleAddUser = async () => {
         if (!newUser.username || !newUser.email || !newUser.password || !newUser.age || !newUser.college_name || !newUser.course) {
             alert("All fields are required!");
@@ -37,7 +36,7 @@ const AdminDashboard = () => {
         try {
             const response = await axios.post("https://college-review-backend.vercel.app/api/auth/users", {
                 ...newUser,
-                age: Number(newUser.age), // Ensure age is a number
+                age: Number(newUser.age),
             });
     
             setUsers([...users, response.data.user]);
@@ -47,6 +46,7 @@ const AdminDashboard = () => {
             alert(err.response?.data?.message || "Error adding user.");
         }
     };
+    
     // Update User
     const handleUpdateUser = async () => {
         try {
@@ -77,14 +77,14 @@ const AdminDashboard = () => {
             alert("All fields are required!");
             return;
         }
-    
+
         try {
             const response = await axios.post("https://college-review-backend.vercel.app/api/auth/reviews", {
                 ...newReview,
                 user_id: Number(newReview.user_id),
                 rating: Number(newReview.rating),
             });
-    
+
             setReviews([...reviews, response.data.review]);
             setNewReview({ user_id: "", college_name: "", course_name: "", rating: 1, feedback: "" });
             alert("Review added successfully!");
@@ -92,7 +92,7 @@ const AdminDashboard = () => {
             alert(err.response?.data?.message || "Error adding review.");
         }
     };
-    
+
 
     // Update Review
     const handleUpdateReview = async () => {
@@ -110,7 +110,7 @@ const AdminDashboard = () => {
             alert("Invalid review ID.");
             return;
         }
-    
+
         if (window.confirm("Are you sure you want to delete this review?")) {
             try {
                 await axios.delete(`https://college-review-backend.vercel.app/api/auth/reviews/${id}`);
@@ -121,7 +121,7 @@ const AdminDashboard = () => {
             }
         }
     };
-    
+
 
     if (loading) return <div className="adminDashboardPage"><h1>Loading...</h1></div>;
     if (error) return <div className="adminDashboardPage"><h1>Error</h1><p>{error}</p></div>;
@@ -134,7 +134,9 @@ const AdminDashboard = () => {
             {/* Users Section */}
             <section className="dashboardSection">
                 <h2>Users</h2>
-                <button onClick={() => setEditUser({})}>Add New User</button>
+                <button onClick={() => setNewUser({ username: "", email: "", password: "", age: "", college_name: "", course: "" })}>
+                    Add New User
+                </button>
                 <div className="userTableContainer">
                     <table className="userTable">
                         <thead>
@@ -165,20 +167,82 @@ const AdminDashboard = () => {
                     </table>
                 </div>
 
-                {/* User Modal */}
-                {editUser && (
+                {(editUser || newUser.username !== "") && (
                     <div className="modal">
-                        <h3>{editUser.user_id ? "Edit User" : "Add User"}</h3>
-                        <input value={editUser.username || ""} onChange={(e) => setEditUser({ ...editUser, username: e.target.value })} placeholder="Username" />
-                        <input value={editUser.email || ""} onChange={(e) => setEditUser({ ...editUser, email: e.target.value })} placeholder="Email" />
-                        <input value={editUser.password || ""} onChange={(e) => setEditUser({ ...editUser, password: e.target.value })} placeholder="Password" type="password" />
-                        <input value={editUser.age || ""} onChange={(e) => setEditUser({ ...editUser, age: Number(e.target.value) })} placeholder="Age" type="number" />
-                        <input value={editUser.college_name || ""} onChange={(e) => setEditUser({ ...editUser, college_name: e.target.value })} placeholder="College Name" />
-                        <input value={editUser.course || ""} onChange={(e) => setEditUser({ ...editUser, course: e.target.value })} placeholder="Course" />
-                        <button onClick={editUser.user_id ? handleUpdateUser : handleAddUser}>{editUser.user_id ? "Update" : "Add"}</button>
-                        <button onClick={() => setEditUser(null)}>Cancel</button>
+                        <h3>{editUser ? "Edit User" : "Add User"}</h3>
+
+                        <input
+                            value={editUser ? editUser.username : newUser.username}
+                            onChange={(e) =>
+                                editUser
+                                    ? setEditUser({ ...editUser, username: e.target.value })
+                                    : setNewUser({ ...newUser, username: e.target.value })
+                            }
+                            placeholder="Username"
+                        />
+
+                        <input
+                            value={editUser ? editUser.email : newUser.email}
+                            onChange={(e) =>
+                                editUser
+                                    ? setEditUser({ ...editUser, email: e.target.value })
+                                    : setNewUser({ ...newUser, email: e.target.value })
+                            }
+                            placeholder="Email"
+                        />
+
+                        <input
+                            type="password"
+                            value={editUser ? editUser.password : newUser.password}
+                            onChange={(e) =>
+                                editUser
+                                    ? setEditUser({ ...editUser, password: e.target.value })
+                                    : setNewUser({ ...newUser, password: e.target.value })
+                            }
+                            placeholder="Password"
+                        />
+
+                        <input
+                            type="number"
+                            value={editUser ? editUser.age : newUser.age}
+                            onChange={(e) =>
+                                editUser
+                                    ? setEditUser({ ...editUser, age: Number(e.target.value) })
+                                    : setNewUser({ ...newUser, age: Number(e.target.value) })
+                            }
+                            placeholder="Age"
+                        />
+
+                        <input
+                            value={editUser ? editUser.college_name : newUser.college_name}
+                            onChange={(e) =>
+                                editUser
+                                    ? setEditUser({ ...editUser, college_name: e.target.value })
+                                    : setNewUser({ ...newUser, college_name: e.target.value })
+                            }
+                            placeholder="College Name"
+                        />
+
+                        <input
+                            value={editUser ? editUser.course : newUser.course}
+                            onChange={(e) =>
+                                editUser
+                                    ? setEditUser({ ...editUser, course: e.target.value })
+                                    : setNewUser({ ...newUser, course: e.target.value })
+                            }
+                            placeholder="Course"
+                        />
+
+                        <button onClick={editUser ? handleUpdateUser : handleAddUser}>
+                            {editUser ? "Update" : "Add"}
+                        </button>
+
+                        <button onClick={() => (editUser ? setEditUser(null) : setNewUser({ username: "", email: "", password: "", age: "", college_name: "", course: "" }))}>
+                            Cancel
+                        </button>
                     </div>
                 )}
+
             </section>
 
             {/* Reviews Section */}
