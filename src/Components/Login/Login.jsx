@@ -36,6 +36,7 @@ const Login = () => {
             await axios.post("https://college-review-backend.vercel.app/api/auth/reset-password", {
                 username: formData.username,
                 newPassword: formData.newPassword,
+                confirmPassword:formData.confirmPassword,
             });
             message.success("Password reset successfully!");
             setForgotPasswordVisible(false);
