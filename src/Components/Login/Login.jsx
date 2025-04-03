@@ -21,8 +21,7 @@ const Login = () => {
     };
 
     const handleResetPassword = async () => {
-        console.log("New Password:", formData.newPassword);
-        console.log("Confirm Password:", formData.confirmPassword);
+     
     
         if (!formData.username || !formData.newPassword || !formData.confirmPassword) {
             message.error("All fields are required!");
