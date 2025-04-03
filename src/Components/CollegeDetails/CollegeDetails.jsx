@@ -66,7 +66,19 @@ const CollegeDetails = () => {
                     >
                         View on Google Maps
                     </a>
-                )}
+                )}<br/>
+                {
+                    college.college_website &&
+                    (
+                        <a 
+                        href={college.college_website}
+                        target='_blank'
+                        className='college-link'
+                        >
+                            Visit College Website
+                        </a>
+                    )
+                }
             </Card>
 
             {/* Courses Section */}
@@ -148,6 +160,7 @@ const CollegeDetails = () => {
                     )}
                 </Row>
             </section>
+
         </div>
     );
 };
