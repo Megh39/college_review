@@ -21,18 +21,22 @@ const Login = () => {
     };
 
     const handleResetPassword = async () => {
-        const { username, newPassword, confirmPassword } = formData;
-
-        if (!username || !newPassword || !confirmPassword) {
+        console.log("New Password:", formData.newPassword);
+        console.log("Confirm Password:", formData.confirmPassword);
+    
+        if (!formData.username || !formData.newPassword || !formData.confirmPassword) {
             message.error("All fields are required!");
             return;
         }
-        if (newPassword !== confirmPassword) {
+        if (formData.newPassword.trim() !== formData.confirmPassword.trim()) {
             message.error("Passwords do not match!");
             return;
         }
         try {
-            await axios.post("https://college-review-backend.vercel.app/api/auth/reset-password", { username, newPassword });
+            await axios.post("https://college-review-backend.vercel.app/api/auth/reset-password", {
+                username: formData.username,
+                newPassword: formData.newPassword,
+            });
             message.success("Password reset successfully!");
             setForgotPasswordVisible(false);
             setFormData({ username: "", newPassword: "", confirmPassword: "" });
@@ -40,6 +44,7 @@ const Login = () => {
             message.error("Error resetting password!");
         }
     };
+    
     const handleSubmit = async (e) => {
         e.preventDefault();
 
