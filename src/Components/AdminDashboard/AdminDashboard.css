@@ -15,12 +15,15 @@
   padding: 10px;
   font-size: 1.2rem;
   transition: 0.3s;
+  border-radius: 10px;
+  box-shadow: none !important;
+  border: 1px ;
 }
 .addnewuserbutton:hover {
   color: cyan;
-  transform: scale(1.02);
   transition: 0.3s;
-  font-size: 1.3rem;
+  border-radius: 0;
+  transform: scale(1.05);
 }
 .adminDashboardPage h1 {
   color: cyan;

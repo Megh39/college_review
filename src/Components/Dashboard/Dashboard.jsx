@@ -6,7 +6,6 @@ const Dashboard = () => {
     const navigate = useNavigate();
     const [userRole, setUserRole] = useState(null);
 
-    // Check user role from localStorage on mount
     useEffect(() => {
         const user = JSON.parse(localStorage.getItem("user"));
         setUserRole(user?.role || "user"); // Default to "user" if no role
@@ -45,7 +44,7 @@ const Dashboard = () => {
             </div>
             <div className="dashboard-actions">
                 {userRole === "admin" && (
-                    <button className="admin-btn" onClick={() => handleNavigation("/admin")}>
+                    <button className="admin-btn" onClick={() => handleNavigation("/admindashboard")}>
                         Admin Dashboard
                     </button>
                 )}

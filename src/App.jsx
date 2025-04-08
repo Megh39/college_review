@@ -22,7 +22,7 @@ const getUser = () => {
 // ✅ Protected Route for Users
 const PrivateRoute = ({ children }) => {
   const user = getUser();
-  return user && user.role !== "admin" ? children : <Navigate to="/login" />;
+  return user ? children : <Navigate to="/login" />;
 };
 
 // ✅ Protected Route for Admins
