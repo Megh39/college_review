@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Register.css";
 import { Link } from "react-router-dom";
 import axios from "axios";
@@ -13,6 +13,11 @@ const Register = () => {
     const [confirmPassword, setConfirmPassword] = useState("");
     const [course, setCourse] = useState("");
     const [errors, setErrors] = useState({});
+    const [collegeOptions, setCollegeOptions] = useState([]);
+    const [allCollegeData, setAllCollegeData] = useState([]); // for extracting courses
+    const [courseOptions, setCourseOptions] = useState([]);
+
+
     const navigate = useNavigate();
 
     // Validation functions
@@ -83,6 +88,19 @@ const Register = () => {
             alert(`Error: ${error.response?.data?.message || "Server error"}`);
         }
     };
+    useEffect(() => {
+        const fetchColleges = async () => {
+            try {
+                const response = await axios.get("https://college-review-backend.vercel.app/api/colleges");
+                setAllCollegeData(response.data);
+                setCollegeOptions(response.data.map(college => college.name));
+            } catch (err) {
+                console.error("Error fetching college list:", err);
+            }
+        };
+        fetchColleges();
+    }, []);
+
 
     return (
         <div className="registerScreen">
@@ -161,24 +179,51 @@ const Register = () => {
                             type="text"
                             id="college_name"
                             name="college_name"
+                            list="collegeList"
                             placeholder="Enter full college name (required)"
-                            onChange={(e) => set_college_name(e.target.value)}
+                            onChange={(e) => {
+                                const selectedCollege = e.target.value;
+                                set_college_name(selectedCollege);
+
+                                const matched = allCollegeData.find(c => c.name === selectedCollege);
+                                if (matched && matched.courses?.length > 0) {
+                                    const uniqueCourses = [...new Set(matched.courses.map(course => course.course_name))];
+                                    setCourseOptions(uniqueCourses);
+                                } else {
+                                    setCourseOptions([]);
+                                }
+                            }}
                             className={errors.college_name ? "error" : ""}
                             required
                         />
+                        <datalist id="collegeList">
+                            {collegeOptions.map((college, index) => (
+                                <option key={index} value={college} />
+                            ))}
+                        </datalist>
+
                         {errors.college_name && <span className="errorMessage">{errors.college_name}</span>}
                     </div>
                     <div className="formGroup">
-                        <label htmlFor="course">Course Name</label>
+                    <label htmlFor="college_name">Course Name</label>
+
                         <input
                             type="text"
                             id="course"
                             name="course"
-                            placeholder="Enter your course name (required)"
+                            list="courseList"
+                            placeholder="Enter your course name"
+                            value={course}
                             onChange={(e) => setCourse(e.target.value)}
                             className={errors.course ? "error" : ""}
-                            required
                         />
+                        <datalist id="courseList">
+                            {courseOptions.map((course, index) => (
+                                <option key={index} value={course} />
+                            ))}
+                        </datalist>
+
+
                         {errors.course && <span className="errorMessage">{errors.course}</span>}
                     </div>
                     <button className="registerButton">Register</button>

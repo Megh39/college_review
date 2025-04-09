@@ -11,14 +11,27 @@ const AdminDashboard = () => {
     const [editReview, setEditReview] = useState(null);
     const [newUser, setNewUser] = useState({ username: "", email: "", password: "", age: "", college_name: "", course: "" });
     const [showModal, setShowModal] = useState(false);
-
+    const [analytics, setAnalytics] = useState({
+        totalUsers: 0,
+        totalReviews: 0,
+        approvedReviews: 0,
+        pendingReviews: 0
+    });
     useEffect(() => {
         const fetchData = async () => {
             try {
                 const usersResponse = await axios.get("https://college-review-backend.vercel.app/api/auth/users");
-                setUsers(usersResponse.data);
                 const reviewsResponse = await axios.get("https://college-review-backend.vercel.app/api/auth/reviews");
+    
+                const totalUsers = usersResponse.data.length;
+                const totalReviews = reviewsResponse.data.length;
+                const approvedReviews = reviewsResponse.data.filter(r => r.approved).length;
+                const pendingReviews = totalReviews - approvedReviews;
+    
+                setUsers(usersResponse.data);
                 setReviews(reviewsResponse.data);
+    
+                setAnalytics({ totalUsers, totalReviews, approvedReviews, pendingReviews });
                 setLoading(false);
             } catch (err) {
                 setError("Failed to fetch data.");
@@ -27,6 +40,7 @@ const AdminDashboard = () => {
         };
         fetchData();
     }, []);
+    
     const handleAddUser = async () => {
         if (!newUser.username || !newUser.email || !newUser.password || !newUser.age || !newUser.college_name || !newUser.course) {
             alert("All fields are required!");
@@ -140,6 +154,28 @@ const AdminDashboard = () => {
         <div className="adminDashboardPage">
             <h1>Welcome to Admin Dashboard!</h1>
             <h3>Manage Site Users and Reviews</h3>
+{/* Site Analytics Section */}
+<section className="dashboardSection">
+    <h2>Site Analytics</h2>
+    <div className="analyticsGrid">
+        <div className="analyticsCard">
+            <h3>Total Users</h3>
+            <p>{analytics.totalUsers}</p>
+        </div>
+        <div className="analyticsCard">
+            <h3>Total Reviews</h3>
+            <p>{analytics.totalReviews}</p>
+        </div>
+        <div className="analyticsCard">
+            <h3>Approved Reviews</h3>
+            <p>{analytics.approvedReviews}</p>
+        </div>
+        <div className="analyticsCard">
+            <h3>Pending Reviews</h3>
+            <p>{analytics.pendingReviews}</p>
+        </div>
+    </div>
+</section>
 
             {/* Users Section */}
             <section className="dashboardSection">
@@ -157,7 +193,7 @@ const AdminDashboard = () => {
                                 <th>Age</th>
                                 <th>College</th>
                                 <th>Course</th>
-                                <th>Password</th>
+                                {/* <th>Password</th> */}
                                 <th>Actions</th>
                             </tr>
                         </thead>
@@ -169,7 +205,7 @@ const AdminDashboard = () => {
                                     <td>{user.age}</td>
                                     <td>{user.college_name}</td>
                                     <td>{user.course}</td>
-                                    <td>{user.password}</td>
+                                    {/* <td>{user.password}</td> */}
                                     <td>
                                         <button onClick={() => {
                                             setEditUser(user); // Make sure modal opens

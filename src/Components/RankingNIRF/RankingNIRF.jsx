@@ -144,7 +144,7 @@ const RankingNIRF = () => {
                 <input type="text" placeholder="Filter City" onChange={(e) => handleFilterChange(e, "college_city")} />
                 <input type="text" placeholder="Filter State" onChange={(e) => handleFilterChange(e, "college_state")} />
                 <input type="text" placeholder="Filter Ranking Score" onChange={(e) => handleFilterChange(e, "ranking_score")} />
-                <button onClick={clearFilters}>Clear Filters</button>
+                <button onClick={clearFilters} className="clearFilterButton">Clear Filters</button>
 
             </div>
 

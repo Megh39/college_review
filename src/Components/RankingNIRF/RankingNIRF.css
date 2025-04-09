@@ -44,3 +44,11 @@ th {
   padding: 5px 10px;
   font-size: 14px;
 }
+.clearFilterButton{
+  font-size: 1rem;
+  transition: 0.3s;
+}
+.clearFilterButton:hover{
+  background-color: red;
+  transition: 0.3s;
+}

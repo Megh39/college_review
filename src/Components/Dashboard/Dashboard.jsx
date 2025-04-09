@@ -5,11 +5,14 @@ import "./Dashboard.css";
 const Dashboard = () => {
     const navigate = useNavigate();
     const [userRole, setUserRole] = useState(null);
+    const [username, setUsername] = useState("");
 
     useEffect(() => {
         const user = JSON.parse(localStorage.getItem("user"));
-        setUserRole(user?.role || "user"); // Default to "user" if no role
+        setUserRole(user?.role || "user");
+        setUsername(user?.username || "User");
     }, []);
+
 
     const handleLogout = () => {
         localStorage.removeItem("user");
@@ -23,6 +26,10 @@ const Dashboard = () => {
     return (
         <div className="dashboard-page">
             <h1>Welcome!</h1>
+            <h2 style={{ fontWeight: "normal", color: "#555" }}>
+                Hello, <span style={{ fontWeight: "bold", color: "#1890ff" }}>{username}</span>! What would you like to do today?
+            </h2>
+
             <h2>What Would You Like To Do Today?</h2>
             <div className="dashboard-grid">
                 <div className="dashboard-card">
