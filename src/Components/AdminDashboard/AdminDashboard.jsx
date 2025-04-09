@@ -10,7 +10,6 @@ const AdminDashboard = () => {
     const [editUser, setEditUser] = useState(null);
     const [editReview, setEditReview] = useState(null);
     const [newUser, setNewUser] = useState({ username: "", email: "", password: "", age: "", college_name: "", course: "" });
-    const [newReview, setNewReview] = useState({ user_id: "", college_name: "", course_name: "", rating: 1, feedback: "" });
     const [showModal, setShowModal] = useState(false);
 
     useEffect(() => {
@@ -73,26 +72,7 @@ const AdminDashboard = () => {
             }
         }
     };
-    // const handleAddReview = async () => {
-    //     if (!newReview.user_id || !newReview.college_name || !newReview.course_name || !newReview.rating || !newReview.feedback) {
-    //         alert("All fields are required!");
-    //         return;
-    //     }
 
-    //     try {
-    //         const response = await axios.post("https://college-review-backend.vercel.app/api/auth/submit", {
-    //             ...newReview,
-    //             user_id: Number(newReview.user_id),
-    //             rating: Number(newReview.rating),
-    //         });
-
-    //         setReviews([...reviews, response.data.review]);
-    //         setNewReview({ user_id: "", college_name: "", course_name: "", rating: 1, feedback: "" });
-    //         alert("Review added successfully!");
-    //     } catch (err) {
-    //         alert(err.response?.data?.message || "Error adding review.");
-    //     }
-    // };
 
     const handleUpdateReview = async () => {
         try {
@@ -112,18 +92,18 @@ const AdminDashboard = () => {
             const response = await axios.put(`https://college-review-backend.vercel.app/api/auth/reviews/${reviewId}`, {
                 approved: !currentApprovalStatus,
             });
-    
+
             setReviews(reviews.map(review =>
                 review.review_id === reviewId ? response.data.review : review
             ));
-    
+
             alert("Review approval status updated!");
         } catch (err) {
             console.error("Error updating approval status:", err);
             alert(err.response?.data?.message || "Failed to update review approval.");
         }
     };
-    
+
 
 
     const handleDeleteReview = async (reviewId) => {
@@ -289,11 +269,7 @@ const AdminDashboard = () => {
             {/* Reviews Section */}
             <section className="dashboardSection">
                 <h2>Reviews</h2>
-                {/* <button onClick={() => setEditReview({
-                    user_id: "", username: "", college_name: "", course_name: "", rating: 1, feedback: ""
-                })}>
-                    Add New Review
-                </button> */}
+
                 <div className="userTableContainer">
                     <table className="userTable">
                         <thead>
@@ -302,7 +278,11 @@ const AdminDashboard = () => {
                                 <th>User ID</th>
                                 <th>College</th>
                                 <th>Course</th>
-                                <th>Rating</th>
+                                <th>Overall</th>
+                                <th>Faculty</th>
+                                <th>Facilities</th>
+                                <th>Placement</th>
+                                <th>Campus Life</th>
                                 <th>Feedback</th>
                                 <th>Actions</th>
                             </tr>
@@ -314,17 +294,24 @@ const AdminDashboard = () => {
                                     <td>{review.user_id}</td>
                                     <td>{review.college_name}</td>
                                     <td>{review.course_name}</td>
-                                    <td>{review.rating}</td>
+                                    <td>{review.overall_rating}</td>
+                                    <td>{review.faculty_rating}</td>
+                                    <td>{review.facility_rating}</td>
+                                    <td>{review.placement_rating}</td>
+                                    <td>{review.campus_life_rating}</td>
                                     <td>{review.feedback}</td>
                                     <td>
                                         <button onClick={() => handleApproveReview(review.review_id, review.approved)}>
                                             {review.approved ? "Disapprove" : "Approve"}
                                         </button>
+                                        <button onClick={() => setEditReview(review)}>Edit</button>
                                         <button onClick={() => handleDeleteReview(review.review_id)}>Delete</button>
                                     </td>
                                 </tr>
                             ))}
                         </tbody>
+
+
 
                     </table>
                 </div>
@@ -333,15 +320,32 @@ const AdminDashboard = () => {
                 {editReview && (
                     <div className="modal">
                         <h3>{editReview.review_id ? "Edit Review" : "Add Review"}</h3>
-                        <input value={editReview.user_id || ""} onChange={(e) => setEditReview({ ...editReview, user_id: Number(e.target.value) })} placeholder="User ID" type="number" />
+
+                        <input value={editReview.user_id || ""} onChange={(e) => setEditReview({ ...editReview, user_id: e.target.value })} placeholder="User ID" />
 
                         <input value={editReview.college_name || ""} onChange={(e) => setEditReview({ ...editReview, college_name: e.target.value })} placeholder="College Name" />
+
                         <input value={editReview.course_name || ""} onChange={(e) => setEditReview({ ...editReview, course_name: e.target.value })} placeholder="Course Name" />
-                        <input value={editReview.rating || ""} onChange={(e) => setEditReview({ ...editReview, rating: Number(e.target.value) })} placeholder="Rating (1-10)" type="number" min="1" max="10" />
-                        <input value={editReview.feedback || ""} onChange={(e) => setEditReview({ ...editReview, feedback: e.target.value })} placeholder="Feedback" />
-                        <button onClick={editReview._id ? handleUpdateReview : handleAddReview}>{editReview.review_id ? "Update" : "Add"}</button>
+
+                        <input type="number" min="1" max="5" value={editReview.overall_rating || 1} onChange={(e) => setEditReview({ ...editReview, overall_rating: Number(e.target.value) })} placeholder="Overall Rating (1-5)" />
+
+                        <input type="number" min="1" max="5" value={editReview.faculty_rating || 1} onChange={(e) => setEditReview({ ...editReview, faculty_rating: Number(e.target.value) })} placeholder="Faculty Rating (1-5)" />
+
+                        <input type="number" min="1" max="5" value={editReview.facility_rating || 1} onChange={(e) => setEditReview({ ...editReview, facility_rating: Number(e.target.value) })} placeholder="Facilities Rating (1-5)" />
+
+                        <input type="number" min="1" max="5" value={editReview.placement_rating || 1} onChange={(e) => setEditReview({ ...editReview, placement_rating: Number(e.target.value) })} placeholder="Placement Rating (1-5)" />
+
+                        <input type="number" min="1" max="5" value={editReview.campus_life_rating || 1} onChange={(e) => setEditReview({ ...editReview, campus_life_rating: Number(e.target.value) })} placeholder="Campus Life Rating (1-5)" />
+
+                        <textarea value={editReview.feedback || ""} onChange={(e) => setEditReview({ ...editReview, feedback: e.target.value })} placeholder="Feedback" />
+
+                        <button onClick={handleUpdateReview}>
+                            Update
+                        </button>
+
                         <button onClick={() => setEditReview(null)}>Cancel</button>
                     </div>
+
                 )}
             </section>
         </div>
