@@ -92,10 +92,19 @@ const AdminDashboard = () => {
             const response = await axios.put(`https://college-review-backend.vercel.app/api/auth/reviews/${reviewId}`, {
                 approved: !currentApprovalStatus,
             });
+            console.log(response.data); // see if review_id exists in all objects
+
+            const updatedReview = response.data.review;
+            if (!updatedReview || !updatedReview.review_id) {
+                alert("Invalid review response from server.");
+                return;
+            }
+            console.log("Review update response:", response.data);
 
             setReviews(reviews.map(review =>
-                review.review_id === reviewId ? response.data.review : review
+                review.review_id === reviewId ? updatedReview : review
             ));
+
 
             alert("Review approval status updated!");
         } catch (err) {
